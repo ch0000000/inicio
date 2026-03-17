@@ -1145,31 +1145,31 @@
             </div>
         </div>
         <div class="form-card">
-            <form onsubmit="return false;">
+            <form action="https://formspree.io/f/mvzwvqej" method="POST" id="locatieform">
                 <div class="form-row form-row-double">
                     <div>
                         <label class="form-label">Naam *</label>
-                        <input type="text" class="form-input" placeholder="Uw volledige naam" required>
+                        <input type="text" name="naam" class="form-input" placeholder="Uw volledige naam" required>
                     </div>
                     <div>
                         <label class="form-label">Bedrijf *</label>
-                        <input type="text" class="form-input" placeholder="Bedrijfsnaam" required>
+                        <input type="text" name="bedrijf" class="form-input" placeholder="Bedrijfsnaam" required>
                     </div>
                 </div>
                 <div class="form-row form-row-double">
                     <div>
                         <label class="form-label">E-mail *</label>
-                        <input type="email" class="form-input" placeholder="uw@email.nl" required>
+                        <input type="email" name="email" class="form-input" placeholder="uw@email.nl" required>
                     </div>
                     <div>
                         <label class="form-label">Telefoon</label>
-                        <input type="tel" class="form-input" placeholder="+31 6 1234 5678">
+                        <input type="tel" name="telefoon" class="form-input" placeholder="+31 6 1234 5678">
                     </div>
                 </div>
                 <div class="form-row form-row-double">
                     <div>
                         <label class="form-label">Type locatie</label>
-                        <select class="form-select">
+                        <select name="type_locatie" class="form-select">
                             <option value="">Selecteer...</option>
                             <option>Tankstation</option>
                             <option>Bedrijventerrein</option>
@@ -1182,7 +1182,7 @@
                     </div>
                     <div>
                         <label class="form-label">Dagelijks bezoekersaantal</label>
-                        <select class="form-select">
+                        <select name="bezoekers_per_dag" class="form-select">
                             <option value="">Selecteer...</option>
                             <option>0 – 100</option>
                             <option>100 – 500</option>
@@ -1193,10 +1193,35 @@
                 </div>
                 <div class="form-row">
                     <label class="form-label">Bericht (optioneel)</label>
-                    <textarea class="form-textarea" placeholder="Vertel ons meer over uw locatie..."></textarea>
+                    <textarea name="bericht" class="form-textarea" placeholder="Vertel ons meer over uw locatie..."></textarea>
+                </div>
+                <div id="form-success" style="display:none; background:#f0fff4; border:1px solid #68d391; border-radius:10px; padding:16px; margin-bottom:16px; color:#276749; font-weight:600; text-align:center;">
+                    ✓ Bedankt! We nemen binnen 24 uur contact met u op.
                 </div>
                 <button type="submit" class="form-submit">Plan mijn gratis locatiecheck →</button>
             </form>
+            <script>
+                document.getElementById('locatieform').addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    const form = e.target;
+                    const btn = form.querySelector('button[type="submit"]');
+                    btn.textContent = 'Verzenden...';
+                    btn.disabled = true;
+                    const res = await fetch(form.action, {
+                        method: 'POST',
+                        body: new FormData(form),
+                        headers: { 'Accept': 'application/json' }
+                    });
+                    if (res.ok) {
+                        form.reset();
+                        document.getElementById('form-success').style.display = 'block';
+                        btn.textContent = 'Verstuurd ✓';
+                    } else {
+                        btn.textContent = 'Er ging iets mis — probeer opnieuw';
+                        btn.disabled = false;
+                    }
+                });
+            </script>
         </div>
     </div>
 </section>
