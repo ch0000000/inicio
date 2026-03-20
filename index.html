@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio Vending — Premium Outdoor Vending Machines Nederland</title>
+    <title>Inicio Vending â Premium Outdoor Vending Machines Nederland</title>
     <meta name="description" content="Inicio Vending plaatst en exploiteert premium outdoor vendingmachines op uw locatie. Geen investering, volledig ontzorgd, 24/7 service.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +44,7 @@
             overflow-x: hidden;
         }
 
-        /* ═══════════════ NAV ═══════════════ */
+        /* âââââââââââââââ NAV âââââââââââââââ */
         .nav {
             position: fixed; top: 0; left: 0; right: 0; z-index: 100;
             padding: 0 40px; height: 72px;
@@ -88,11 +88,14 @@
         .nav-cta:hover { background: var(--red-light); transform: translateY(-1px); }
         .nav.scrolled .nav-cta { color: var(--white) !important; }
 
-        .nav-mobile { display: none; cursor: pointer; background: none; border: none; }
+        .nav-mobile { display: none; cursor: pointer; background: none; border: none; padding: 8px; -webkit-tap-highlight-color: transparent; }
         .nav-mobile span { display: block; width: 24px; height: 2px; background: var(--white); margin: 5px 0; transition: all 0.3s; border-radius: 2px; }
         .nav.scrolled .nav-mobile span { background: var(--dark); }
+        .nav-mobile.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .nav-mobile.active span:nth-child(2) { opacity: 0; }
+        .nav-mobile.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
-        /* ═══════════════ HERO ═══════════════ */
+        /* âââââââââââââââ HERO âââââââââââââââ */
         .hero {
             min-height: 100vh;
             background:
@@ -186,7 +189,7 @@
         }
         .btn-secondary:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); }
 
-        /* Hero right — machine visual placeholder */
+        /* Hero right â machine visual placeholder */
         .hero-visual {
             display: flex; align-items: center; justify-content: center;
             position: relative;
@@ -247,7 +250,7 @@
         .hero-badge-2 { bottom: 80px; left: -30px; }
         .hero-badge strong { color: var(--red-light); font-size: 18px; }
 
-        /* ═══════════════ MARQUEE ═══════════════ */
+        /* âââââââââââââââ MARQUEE âââââââââââââââ */
         .marquee-section {
             background: var(--red);
             padding: 14px 0; overflow: hidden;
@@ -270,7 +273,7 @@
         }
         @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
-        /* ═══════════════ STATS ═══════════════ */
+        /* âââââââââââââââ STATS âââââââââââââââ */
         .stats {
             padding: 64px 40px;
             background: var(--white);
@@ -295,7 +298,7 @@
             letter-spacing: 0.5px; text-transform: uppercase;
         }
 
-        /* ═══════════════ SECTIONS COMMON ═══════════════ */
+        /* âââââââââââââââ SECTIONS COMMON âââââââââââââââ */
         .section {
             padding: 120px 40px;
         }
@@ -333,7 +336,7 @@
             margin-bottom: 64px;
         }
 
-        /* ═══════════════ ABOUT ═══════════════ */
+        /* âââââââââââââââ ABOUT âââââââââââââââ */
         .about-grid {
             display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
             align-items: start;
@@ -370,7 +373,7 @@
             font-size: 13px; line-height: 1.6; color: var(--text-light);
         }
 
-        /* ═══════════════ USPs ═══════════════ */
+        /* âââââââââââââââ USPs âââââââââââââââ */
         .usp-grid {
             display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
         }
@@ -404,7 +407,7 @@
             position: relative;
         }
 
-        /* ═══════════════ PRODUCT ═══════════════ */
+        /* âââââââââââââââ PRODUCT âââââââââââââââ */
         .product-layout {
             display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
             align-items: center;
@@ -464,7 +467,7 @@
             font-size: 14px; line-height: 1.6; color: var(--text-secondary);
         }
 
-        /* ═══════════════ LOCATIES ═══════════════ */
+        /* âââââââââââââââ LOCATIES âââââââââââââââ */
         .locaties-grid {
             display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
         }
@@ -494,7 +497,7 @@
             font-size: 13px; line-height: 1.6; color: var(--text-light);
         }
 
-        /* ═══════════════ WERKWIJZE ═══════════════ */
+        /* âââââââââââââââ WERKWIJZE âââââââââââââââ */
         .werkwijze-timeline {
             display: grid; grid-template-columns: repeat(5, 1fr); gap: 0;
             position: relative;
@@ -531,7 +534,7 @@
             font-size: 13px; line-height: 1.6; color: var(--text-light);
         }
 
-        /* ═══════════════ FAQ ═══════════════ */
+        /* âââââââââââââââ FAQ âââââââââââââââ */
         .faq-grid {
             display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
         }
@@ -554,7 +557,7 @@
             font-weight: 300; flex-shrink: 0; margin-left: 16px;
             transition: transform 0.3s;
         }
-        .faq-item.open .faq-q::after { content: '−'; }
+        .faq-item.open .faq-q::after { content: 'â'; }
         .faq-a {
             max-height: 0; overflow: hidden;
             transition: max-height 0.4s var(--ease-out), padding 0.4s;
@@ -565,7 +568,7 @@
             font-size: 14px; line-height: 1.7; color: var(--text-secondary);
         }
 
-        /* ═══════════════ CTA SECTION ═══════════════ */
+        /* âââââââââââââââ CTA SECTION âââââââââââââââ */
         .cta-section {
             padding: 100px 40px;
             background: var(--dark);
@@ -589,7 +592,7 @@
             margin-bottom: 40px; position: relative;
         }
 
-        /* ═══════════════ LEAD FORM ═══════════════ */
+        /* âââââââââââââââ LEAD FORM âââââââââââââââ */
         .form-section {
             padding: 120px 40px;
             background: var(--cream);
@@ -656,7 +659,7 @@
         }
         .form-submit:hover { background: var(--red-light); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(212,0,42,0.25); }
 
-        /* ═══════════════ CONTACT ═══════════════ */
+        /* âââââââââââââââ CONTACT âââââââââââââââ */
         .contact-grid {
             display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
             max-width: 640px;
@@ -676,7 +679,7 @@
             font-size: 13px; color: var(--text-light); margin-top: 4px;
         }
 
-        /* ═══════════════ FOOTER ═══════════════ */
+        /* âââââââââââââââ FOOTER âââââââââââââââ */
         .footer {
             background: var(--dark); padding: 60px 40px 40px;
         }
@@ -703,14 +706,14 @@
             max-width: 1200px; margin-left: auto; margin-right: auto;
         }
 
-        /* ═══════════════ ANIMATIONS ═══════════════ */
+        /* âââââââââââââââ ANIMATIONS âââââââââââââââ */
         .fade-up {
             opacity: 0; transform: translateY(30px);
             transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
         }
         .fade-up.visible { opacity: 1; transform: translateY(0); }
 
-        /* ═══════════════ RESPONSIVE ═══════════════ */
+        /* âââââââââââââââ RESPONSIVE âââââââââââââââ */
         @media (max-width: 1024px) {
             .hero-grid { grid-template-columns: 1fr; gap: 40px; }
             .hero-visual { display: none; }
@@ -726,9 +729,11 @@
             .stats-grid { grid-template-columns: repeat(3, 1fr); }
         }
         @media (max-width: 768px) {
-            .section { padding: 80px 24px; }
-            .hero { padding: 100px 24px 60px; }
-            .nav { padding: 0 24px; }
+            .section { padding: 64px 20px; }
+            .section-header { margin-bottom: 40px; }
+            .hero { padding: 100px 20px 60px; }
+            .nav { padding: 0 20px; }
+            .nav-logo { font-size: 32px; }
             .nav-links { display: none; }
             .nav-mobile { display: block; }
             .nav-links.open {
@@ -736,18 +741,58 @@
                 position: absolute; top: 72px; left: 0; right: 0;
                 background: var(--white); padding: 24px;
                 box-shadow: 0 16px 48px rgba(0,0,0,0.08);
+                border-radius: 0 0 16px 16px;
             }
-            .nav-links.open a { color: var(--text-primary); padding: 12px 0; }
-            .usp-grid { grid-template-columns: 1fr; }
-            .locaties-grid { grid-template-columns: 1fr; }
-            .werkwijze-timeline { grid-template-columns: 1fr; gap: 32px; }
-            .stats-grid { grid-template-columns: repeat(2, 1fr); }
-            .contact-grid { grid-template-columns: 1fr; }
-            .footer-inner { flex-direction: column; gap: 24px; text-align: center; }
-            .footer-links { flex-wrap: wrap; justify-content: center; }
-            .form-row-double { grid-template-columns: 1fr; }
+            .nav-links.open a { color: var(--text-primary); padding: 12px 0; font-size: 16px; }
+            .nav-links.open .nav-cta { text-align: center; margin-top: 8px; }
+            .hero-tag { font-size: 11px; padding: 10px 16px; letter-spacing: 1px; }
+            .hero-sub { font-size: 15px; }
             .hero-actions { flex-direction: column; }
-            .btn-primary, .btn-secondary { justify-content: center; }
+            .btn-primary, .btn-secondary { justify-content: center; width: 100%; padding: 16px 24px; }
+            .stats { padding: 40px 20px; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); border-radius: 16px; }
+            .stat-item { padding: 24px 16px; }
+            .stat-value { font-size: 28px; }
+            .stat-label { font-size: 11px; }
+            .about-features { grid-template-columns: 1fr; gap: 16px; }
+            .about-feature { padding: 24px; }
+            .usp-grid { grid-template-columns: 1fr; }
+            .usp-card { padding: 32px 24px; }
+            .product-visual { min-height: 300px; padding: 40px; }
+            .locaties-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+            .locatie-card { padding: 24px 16px; }
+            .locatie-card h4 { font-size: 14px; }
+            .locatie-card p { font-size: 12px; }
+            .werkwijze-timeline { grid-template-columns: 1fr; gap: 32px; }
+            .werkwijze-dot { width: 64px; height: 64px; font-size: 22px; }
+            .faq-grid { grid-template-columns: 1fr; }
+            .faq-q { font-size: 14px; padding: 18px 20px; }
+            .cta-section { padding: 64px 20px; }
+            .form-section { padding: 64px 20px; }
+            .form-card { padding: 28px 20px; border-radius: 20px; }
+            .form-layout { gap: 40px; }
+            .form-row-double { grid-template-columns: 1fr; }
+            .contact-grid { grid-template-columns: 1fr; gap: 24px; }
+            .contact-value { font-size: 16px; }
+            .footer { padding: 40px 20px 32px; }
+            .footer-inner { flex-direction: column; gap: 24px; text-align: center; }
+            .footer-links { flex-wrap: wrap; justify-content: center; gap: 16px; }
+        }
+
+        /* Extra small phones */
+        @media (max-width: 400px) {
+            .section { padding: 48px 16px; }
+            .hero { padding: 90px 16px 48px; }
+            .nav { padding: 0 16px; }
+            .nav-logo { font-size: 28px; }
+            .hero h1 { font-size: 28px; }
+            .hero-sub { font-size: 14px; }
+            .section-title { font-size: 24px; }
+            .locaties-grid { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: 1fr; }
+            .stat-item { padding: 20px 12px; }
+            .form-card { padding: 24px 16px; }
+            .btn-primary, .btn-secondary { font-size: 14px; padding: 14px 20px; }
         }
     </style>
 </head>
@@ -776,7 +821,7 @@
         <div>
             <div class="hero-tag">&#9679; Outdoor vending machines</div>
             <h1>Extra omzet op uw locatie. <em>Zonder investering.</em></h1>
-            <p class="hero-sub">Inicio Vending plaatst en exploiteert premium vendingmachines met 22" touchscreen en robuuste outdoor ombouw. U stelt de locatie beschikbaar — wij doen de rest.</p>
+            <p class="hero-sub">Inicio Vending plaatst en exploiteert premium vendingmachines met 22" touchscreen en robuuste outdoor ombouw. U stelt de locatie beschikbaar â wij doen de rest.</p>
             <div class="hero-actions">
                 <a href="#leads" class="btn-primary">
                     Plan gratis locatiecheck
@@ -828,7 +873,7 @@
             <div class="stat-label">Cashless</div>
         </div>
         <div class="stat-item">
-            <div class="stat-value">0<span>€</span></div>
+            <div class="stat-value">0<span>â¬</span></div>
             <div class="stat-label">Investering</div>
         </div>
         <div class="stat-item">
@@ -850,7 +895,7 @@
                 <div class="section-label">Over Inicio Vending</div>
                 <h2 class="section-title">Premium outdoor vending, volledig ontzorgd</h2>
                 <p>Inicio Vending is gespecialiseerd in het plaatsen en exploiteren van premium outdoor vendingmachines op drukbezochte locaties in Nederland.</p>
-                <p>Wij investeren volledig in de machine, installatie en exploitatie. U stelt enkel een geschikte locatie beschikbaar en deelt mee in de omzet. Van assortiment en bevoorrading tot realtime monitoring, onderhoud en klantenservice — wij regelen het complete beheer.</p>
+                <p>Wij investeren volledig in de machine, installatie en exploitatie. U stelt enkel een geschikte locatie beschikbaar en deelt mee in de omzet. Van assortiment en bevoorrading tot realtime monitoring, onderhoud en klantenservice â wij regelen het complete beheer.</p>
                 <p>Onze vendingmachine met 22" schermopbouw en robuuste outdoor ombouw onderscheidt zich door premium uitstraling, weersbestendigheid en maximale uptime.</p>
             </div>
             <div class="about-features">
@@ -896,7 +941,7 @@
             <div class="usp-card fade-up">
                 <div class="usp-num">02</div>
                 <h4>Volledig ontzorgd</h4>
-                <p>Van plaatsing tot bevoorrading, onderhoud en klantenservice — wij regelen alles.</p>
+                <p>Van plaatsing tot bevoorrading, onderhoud en klantenservice â wij regelen alles.</p>
             </div>
             <div class="usp-card fade-up">
                 <div class="usp-num">03</div>
@@ -946,7 +991,7 @@
                         <div class="product-spec-num">2</div>
                         <div>
                             <h4>22" Interactief Touchscreen</h4>
-                            <p>Groot display voor intuïtieve productselectie, advertentiecontent en promoties op maat.</p>
+                            <p>Groot display voor intuÃ¯tieve productselectie, advertentiecontent en promoties op maat.</p>
                         </div>
                     </div>
                     <div class="product-spec fade-up">
@@ -960,14 +1005,14 @@
                         <div class="product-spec-num">4</div>
                         <div>
                             <h4>Altijd in de gaten</h4>
-                            <p>Wij houden op afstand bij wanneer de machine gevuld moet worden, goed koelt en naar behoren werkt — zodat storingen worden voorkomen.</p>
+                            <p>Wij houden op afstand bij wanneer de machine gevuld moet worden, goed koelt en naar behoren werkt â zodat storingen worden voorkomen.</p>
                         </div>
                     </div>
                     <div class="product-spec fade-up">
                         <div class="product-spec-num">5</div>
                         <div>
                             <h4>Cashless Betaalsysteem</h4>
-                            <p>Pin, contactloos, Apple Pay, Google Pay. Geen contant geld nodig — veilig en snel.</p>
+                            <p>Pin, contactloos, Apple Pay, Google Pay. Geen contant geld nodig â veilig en snel.</p>
                         </div>
                     </div>
                 </div>
@@ -1011,7 +1056,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
                 </div>
                 <h4>Laadpleinen</h4>
-                <p>EV-rijders wachten 20–45 minuten. De ideale kans voor een snack of drankje.</p>
+                <p>EV-rijders wachten 20â45 minuten. De ideale kans voor een snack of drankje.</p>
             </div>
         </div>
     </div>
@@ -1068,7 +1113,7 @@
             </div>
             <div class="faq-item">
                 <button class="faq-q">Hoe verdien ik als partner?</button>
-                <div class="faq-a"><p>U ontvangt 1 keer per jaar een omzetvergoeding en een rapportage over de verkopen op uw locatie. Als indicatie: circa €1.500 per jaar per locatie — afhankelijk van het aantal verkopen kan dit meer zijn. Hoe meer locaties, hoe hoger uw totale vergoeding.</p></div>
+                <div class="faq-a"><p>U ontvangt 1 keer per jaar een omzetvergoeding en een rapportage over de verkopen op uw locatie. Als indicatie: circa â¬1.500 per jaar per locatie â afhankelijk van het aantal verkopen kan dit meer zijn. Hoe meer locaties, hoe hoger uw totale vergoeding.</p></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">Welke ruimte is nodig?</button>
@@ -1084,7 +1129,7 @@
             </div>
             <div class="faq-item">
                 <button class="faq-q">Wat gebeurt er bij vandalisme?</button>
-                <div class="faq-a"><p>Onze outdoor ombouw is vandaalbestendig. Bij schade regelen wij reparatie of vervanging — dat risico ligt bij ons.</p></div>
+                <div class="faq-a"><p>Onze outdoor ombouw is vandaalbestendig. Bij schade regelen wij reparatie of vervanging â dat risico ligt bij ons.</p></div>
             </div>
             <div class="faq-item">
                 <button class="faq-q">Kan het assortiment aangepast worden?</button>
@@ -1092,7 +1137,7 @@
             </div>
             <div class="faq-item">
                 <button class="faq-q">Hoe snel kan een machine geplaatst worden?</button>
-                <div class="faq-a"><p>Na goedkeuring van de locatiecheck kan een machine doorgaans binnen 2–4 weken geplaatst worden.</p></div>
+                <div class="faq-a"><p>Na goedkeuring van de locatiecheck kan een machine doorgaans binnen 2â4 weken geplaatst worden.</p></div>
             </div>
         </div>
     </div>
@@ -1184,9 +1229,9 @@
                         <label class="form-label">Dagelijks bezoekersaantal</label>
                         <select name="bezoekers_per_dag" class="form-select">
                             <option value="">Selecteer...</option>
-                            <option>0 – 100</option>
-                            <option>100 – 500</option>
-                            <option>500 – 1.000</option>
+                            <option>0 â 100</option>
+                            <option>100 â 500</option>
+                            <option>500 â 1.000</option>
                             <option>1.000+</option>
                         </select>
                     </div>
@@ -1196,9 +1241,9 @@
                     <textarea name="bericht" class="form-textarea" placeholder="Vertel ons meer over uw locatie..."></textarea>
                 </div>
                 <div id="form-success" style="display:none; background:#f0fff4; border:1px solid #68d391; border-radius:10px; padding:16px; margin-bottom:16px; color:#276749; font-weight:600; text-align:center;">
-                    ✓ Bedankt! We nemen binnen 24 uur contact met u op.
+                    â Bedankt! We nemen binnen 24 uur contact met u op.
                 </div>
-                <button type="submit" class="form-submit">Plan mijn gratis locatiecheck →</button>
+                <button type="submit" class="form-submit">Plan mijn gratis locatiecheck â</button>
             </form>
             <script>
                 document.getElementById('locatieform').addEventListener('submit', async function(e) {
@@ -1215,9 +1260,9 @@
                     if (res.ok) {
                         form.reset();
                         document.getElementById('form-success').style.display = 'block';
-                        btn.textContent = 'Verstuurd ✓';
+                        btn.textContent = 'Verstuurd â';
                     } else {
-                        btn.textContent = 'Er ging iets mis — probeer opnieuw';
+                        btn.textContent = 'Er ging iets mis â probeer opnieuw';
                         btn.disabled = false;
                     }
                 });
@@ -1237,7 +1282,7 @@
             <div class="contact-block">
                 <div class="contact-label">Telefoon</div>
                 <div class="contact-value"><a href="tel:+31617352787">06 17352787</a></div>
-                <div class="contact-sub">Ma–Vr: 08:00 – 18:00</div>
+                <div class="contact-sub">MaâVr: 08:00 â 18:00</div>
             </div>
             <div class="contact-block">
                 <div class="contact-label">E-mail</div>
@@ -1260,7 +1305,7 @@
             <a href="#contact">Contact</a>
         </div>
     </div>
-    <div class="footer-copy">© 2026 Inicio Vending. Alle rechten voorbehouden.</div>
+    <div class="footer-copy">Â© 2026 Inicio Vending. Alle rechten voorbehouden.</div>
 </footer>
 
 <script>
@@ -1271,8 +1316,18 @@ window.addEventListener('scroll', () => {
 });
 
 // Mobile nav
-document.getElementById('navMobile').addEventListener('click', () => {
-    document.getElementById('navLinks').classList.toggle('open');
+const navLinks = document.getElementById('navLinks');
+const navMobile = document.getElementById('navMobile');
+navMobile.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    navMobile.classList.toggle('active');
+});
+// Close mobile menu when clicking a link
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navMobile.classList.remove('active');
+    });
 });
 
 // FAQ accordion
