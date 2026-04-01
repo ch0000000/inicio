@@ -3,11 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio Vending â Premium Outdoor Vending Machines Nederland</title>
-    <meta name="description" content="Inicio Vending plaatst en exploiteert premium outdoor vendingmachines op uw locatie. Geen investering, volledig ontzorgd, 24/7 service.">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GS83YNLW35"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-GS83YNLW35');
+    </script>
+    <title>Inicio Vending - Outdoor vending machines voor locaties met doorloop</title>
+    <meta name="description" content="Inicio Vending plaatst en exploiteert premium outdoor vending machines op drukbezochte locaties. Geen investering, volledige ontzorging en 24/7 service.">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#D4002A">
+    <link rel="canonical" href="https://iniciovending.nl/">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta property="og:locale" content="nl_NL">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Inicio Vending">
+    <meta property="og:title" content="Inicio Vending - Outdoor vending machines voor locaties met doorloop">
+    <meta property="og:description" content="Premium outdoor vending machines voor drukbezochte locaties. Geen investering, volledige ontzorging en 24/7 service.">
+    <meta property="og:url" content="https://iniciovending.nl/">
+    <meta property="og:image" content="https://iniciovending.nl/og-image.svg">
+    <meta property="og:image:type" content="image/svg+xml">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Inicio Vending - outdoor vending machines zonder investering">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Inicio Vending - Outdoor vending machines voor locaties met doorloop">
+    <meta name="twitter:description" content="Premium outdoor vending machines voor drukbezochte locaties. Geen investering, volledige ontzorging en 24/7 service.">
+    <meta name="twitter:image" content="https://iniciovending.nl/og-image.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Inicio Vending",
+            "url": "https://iniciovending.nl/",
+            "image": "https://iniciovending.nl/og-image.svg",
+            "logo": "https://iniciovending.nl/favicon.svg",
+            "email": "info@iniciovending.nl",
+            "telephone": "+31617352787",
+            "description": "Inicio Vending plaatst en exploiteert premium outdoor vending machines op drukbezochte locaties in Nederland.",
+            "areaServed": "NL",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "NL"
+            },
+            "sameAs": [
+                "https://iniciovending.nl/"
+            ]
+        }
+    </script>
     <style>
         :root {
             --red: #D4002A;
@@ -43,8 +95,13 @@
             -webkit-font-smoothing: antialiased;
             overflow-x: hidden;
         }
+        a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+            outline: 3px solid rgba(212, 0, 42, 0.28);
+            outline-offset: 3px;
+        }
+        svg { max-width: 100%; }
 
-        /* âââââââââââââââ NAV âââââââââââââââ */
+        /* NAV */
         .nav {
             position: fixed; top: 0; left: 0; right: 0; z-index: 100;
             padding: 0 40px; height: 72px;
@@ -95,7 +152,7 @@
         .nav-mobile.active span:nth-child(2) { opacity: 0; }
         .nav-mobile.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
-        /* âââââââââââââââ HERO âââââââââââââââ */
+        /* HERO */
         .hero {
             min-height: 100vh;
             background:
@@ -124,6 +181,8 @@
             background: radial-gradient(ellipse, rgba(212,0,42,0.10) 0%, transparent 60%);
             pointer-events: none;
         }
+        .hero::after,
+        .hero::before { will-change: transform; }
         .hero::after {
             content: ''; position: absolute; bottom: 0; left: 0; right: 0;
             height: 200px;
@@ -189,7 +248,7 @@
         }
         .btn-secondary:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); }
 
-        /* Hero right â machine visual placeholder */
+        /* Hero right - machine visual placeholder */
         .hero-visual {
             display: flex; align-items: center; justify-content: center;
             position: relative;
@@ -245,12 +304,13 @@
             border: 1px solid rgba(255,255,255,0.1);
             border-radius: 14px; font-size: 13px; color: var(--white);
             display: flex; align-items: center; gap: 10px;
+            max-width: 180px;
         }
         .hero-badge-1 { top: 30px; right: -20px; }
         .hero-badge-2 { bottom: 80px; left: -30px; }
         .hero-badge strong { color: var(--red-light); font-size: 18px; }
 
-        /* âââââââââââââââ MARQUEE âââââââââââââââ */
+        /* MARQUEE */
         .marquee-section {
             background: var(--red);
             padding: 14px 0; overflow: hidden;
@@ -260,6 +320,8 @@
             display: flex; gap: 48px;
             animation: marquee 25s linear infinite;
             white-space: nowrap;
+            width: max-content;
+            will-change: transform;
         }
         .marquee-track span {
             font-size: 13px; font-weight: 600; color: var(--white);
@@ -273,7 +335,7 @@
         }
         @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
-        /* âââââââââââââââ STATS âââââââââââââââ */
+        /* STATS */
         .stats {
             padding: 64px 40px;
             background: var(--white);
@@ -298,7 +360,7 @@
             letter-spacing: 0.5px; text-transform: uppercase;
         }
 
-        /* âââââââââââââââ SECTIONS COMMON âââââââââââââââ */
+        /* SECTIONS COMMON */
         .section {
             padding: 120px 40px;
         }
@@ -335,8 +397,18 @@
         .section-header {
             margin-bottom: 64px;
         }
+        .section-header.centered {
+            text-align: center;
+            max-width: 760px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .section-header.centered .section-desc {
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-        /* âââââââââââââââ ABOUT âââââââââââââââ */
+        /* ABOUT */
         .about-grid {
             display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
             align-items: start;
@@ -373,7 +445,7 @@
             font-size: 13px; line-height: 1.6; color: var(--text-light);
         }
 
-        /* âââââââââââââââ USPs âââââââââââââââ */
+        /* USPs */
         .usp-grid {
             display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
         }
@@ -407,7 +479,7 @@
             position: relative;
         }
 
-        /* âââââââââââââââ PRODUCT âââââââââââââââ */
+        /* PRODUCT */
         .product-layout {
             display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
             align-items: center;
@@ -417,12 +489,24 @@
             border-radius: 24px; padding: 60px;
             display: flex; align-items: center; justify-content: center;
             min-height: 480px; position: relative;
+            overflow: hidden;
+        }
+        .product-visual::before {
+            content: '';
+            position: absolute;
+            inset: 14% auto auto 50%;
+            width: 220px;
+            height: 220px;
+            transform: translateX(-50%);
+            background: radial-gradient(circle, rgba(212, 0, 42, 0.12), transparent 70%);
+            pointer-events: none;
         }
         .product-machine-svg {
             width: 220px; height: 400px;
             background: linear-gradient(145deg, #3a3d45, #2a2d35);
             border-radius: 16px; position: relative;
             box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+            z-index: 1;
         }
         .product-machine-svg::before {
             content: '22" TOUCH'; position: absolute;
@@ -467,7 +551,7 @@
             font-size: 14px; line-height: 1.6; color: var(--text-secondary);
         }
 
-        /* âââââââââââââââ LOCATIES âââââââââââââââ */
+        /* LOCATIES */
         .locaties-grid {
             display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
         }
@@ -497,7 +581,7 @@
             font-size: 13px; line-height: 1.6; color: var(--text-light);
         }
 
-        /* âââââââââââââââ WERKWIJZE âââââââââââââââ */
+        /* WERKWIJZE */
         .werkwijze-timeline {
             display: grid; grid-template-columns: repeat(5, 1fr); gap: 0;
             position: relative;
@@ -534,7 +618,7 @@
             font-size: 13px; line-height: 1.6; color: var(--text-light);
         }
 
-        /* âââââââââââââââ FAQ âââââââââââââââ */
+        /* FAQ */
         .faq-grid {
             display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
         }
@@ -557,18 +641,18 @@
             font-weight: 300; flex-shrink: 0; margin-left: 16px;
             transition: transform 0.3s;
         }
-        .faq-item.open .faq-q::after { content: 'â'; }
+        .faq-item.open .faq-q::after { content: '-'; }
         .faq-a {
             max-height: 0; overflow: hidden;
             transition: max-height 0.4s var(--ease-out), padding 0.4s;
         }
-        .faq-item.open .faq-a { max-height: 200px; }
+        .faq-item.open .faq-a { max-height: 320px; }
         .faq-a p {
             padding: 0 24px 20px;
             font-size: 14px; line-height: 1.7; color: var(--text-secondary);
         }
 
-        /* âââââââââââââââ CTA SECTION âââââââââââââââ */
+        /* CTA SECTION */
         .cta-section {
             padding: 100px 40px;
             background: var(--dark);
@@ -591,8 +675,18 @@
             font-size: 17px; color: var(--silver);
             margin-bottom: 40px; position: relative;
         }
+        .cta-section .container {
+            max-width: 900px;
+            padding: 56px 40px;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 28px;
+            background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+            backdrop-filter: blur(10px);
+            position: relative;
+            z-index: 1;
+        }
 
-        /* âââââââââââââââ LEAD FORM âââââââââââââââ */
+        /* LEAD FORM */
         .form-section {
             padding: 120px 40px;
             background: var(--cream);
@@ -659,7 +753,7 @@
         }
         .form-submit:hover { background: var(--red-light); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(212,0,42,0.25); }
 
-        /* âââââââââââââââ CONTACT âââââââââââââââ */
+        /* CONTACT */
         .contact-grid {
             display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
             max-width: 640px;
@@ -675,11 +769,12 @@
         }
         .contact-value a { color: inherit; text-decoration: none; }
         .contact-value a:hover { color: var(--red); }
+        .contact-value a { overflow-wrap: anywhere; }
         .contact-sub {
             font-size: 13px; color: var(--text-light); margin-top: 4px;
         }
 
-        /* âââââââââââââââ FOOTER âââââââââââââââ */
+        /* FOOTER */
         .footer {
             background: var(--dark); padding: 60px 40px 40px;
         }
@@ -706,14 +801,20 @@
             max-width: 1200px; margin-left: auto; margin-right: auto;
         }
 
-        /* âââââââââââââââ ANIMATIONS âââââââââââââââ */
+        /* ANIMATIONS */
         .fade-up {
             opacity: 0; transform: translateY(30px);
             transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
         }
         .fade-up.visible { opacity: 1; transform: translateY(0); }
 
-        /* âââââââââââââââ RESPONSIVE âââââââââââââââ */
+        /* RESPONSIVE */
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { animation: none !important; transition: none !important; }
+            .marquee-track { animation: none; }
+        }
+
         @media (max-width: 1024px) {
             .hero-grid { grid-template-columns: 1fr; gap: 40px; }
             .hero-visual { display: none; }
@@ -742,9 +843,13 @@
                 background: var(--white); padding: 24px;
                 box-shadow: 0 16px 48px rgba(0,0,0,0.08);
                 border-radius: 0 0 16px 16px;
+                align-items: flex-start;
+                z-index: 120;
             }
             .nav-links.open a { color: var(--text-primary); padding: 12px 0; font-size: 16px; }
-            .nav-links.open .nav-cta { text-align: center; margin-top: 8px; }
+            .nav-links.open .nav-cta { text-align: center; margin-top: 8px; width: 100%; }
+            .hero { min-height: auto; }
+            .hero h1 { font-size: clamp(34px, 9vw, 48px); }
             .hero-tag { font-size: 11px; padding: 10px 16px; letter-spacing: 1px; }
             .hero-sub { font-size: 15px; }
             .hero-actions { flex-direction: column; }
@@ -768,6 +873,7 @@
             .faq-grid { grid-template-columns: 1fr; }
             .faq-q { font-size: 14px; padding: 18px 20px; }
             .cta-section { padding: 64px 20px; }
+            .cta-section .container { padding: 40px 24px; border-radius: 22px; }
             .form-section { padding: 64px 20px; }
             .form-card { padding: 28px 20px; border-radius: 20px; }
             .form-layout { gap: 40px; }
@@ -800,7 +906,7 @@
 
 <!-- NAV -->
 <nav class="nav" id="nav">
-    <a href="#" class="nav-logo">inicio<span>.</span></a>
+    <a href="#hero" class="nav-logo">inicio<span>.</span></a>
     <div class="nav-links" id="navLinks">
         <a href="#about">Over Ons</a>
         <a href="#product">Machine</a>
@@ -808,26 +914,27 @@
         <a href="#werkwijze">Werkwijze</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
-        <a href="#leads" class="nav-cta">Gratis Locatiecheck</a>
+        <a href="#leads" class="nav-cta">Gratis locatiecheck</a>
     </div>
-    <button class="nav-mobile" id="navMobile" aria-label="Menu">
+    <button class="nav-mobile" id="navMobile" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
     </button>
 </nav>
 
+<main>
 <!-- HERO -->
 <section class="hero" id="hero">
     <div class="hero-grid">
         <div>
-            <div class="hero-tag">&#9679; Outdoor vending machines</div>
+            <div class="hero-tag">&#9679; Premium outdoor vending</div>
             <h1>Extra omzet op uw locatie. <em>Zonder investering.</em></h1>
-            <p class="hero-sub">Inicio Vending plaatst en exploiteert premium vendingmachines met 22" touchscreen en robuuste outdoor ombouw. U stelt de locatie beschikbaar â wij doen de rest.</p>
+            <p class="hero-sub">Inicio Vending plaatst en exploiteert premium outdoor vending machines op drukbezochte locaties. U stelt de locatie beschikbaar, wij verzorgen plaatsing, bevoorrading, service en exploitatie.</p>
             <div class="hero-actions">
                 <a href="#leads" class="btn-primary">
-                    Plan gratis locatiecheck
+                    Vraag een gratis locatiecheck aan
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
-                <a href="#product" class="btn-secondary">Bekijk onze machine</a>
+                <a href="#product" class="btn-secondary">Bekijk de machine</a>
             </div>
         </div>
         <div class="hero-visual">
@@ -845,7 +952,7 @@
                 <strong>22"</strong> Touchscreen
             </div>
             <div class="hero-badge hero-badge-2">
-                <strong>24/7</strong> Verkopen
+                <strong>24/7</strong> Beschikbaar
             </div>
         </div>
     </div>
@@ -866,14 +973,14 @@
     <div class="stats-grid">
         <div class="stat-item">
             <div class="stat-value">24/7</div>
-            <div class="stat-label">Verkopen</div>
+            <div class="stat-label">Beschikbaar</div>
         </div>
         <div class="stat-item">
             <div class="stat-value">100<span>%</span></div>
             <div class="stat-label">Cashless</div>
         </div>
         <div class="stat-item">
-            <div class="stat-value">0<span>â¬</span></div>
+            <div class="stat-value">0<span>&euro;</span></div>
             <div class="stat-label">Investering</div>
         </div>
         <div class="stat-item">
@@ -882,7 +989,7 @@
         </div>
         <div class="stat-item">
             <div class="stat-value">22<span>"</span></div>
-            <div class="stat-label">Touchscreen</div>
+            <div class="stat-label">Display</div>
         </div>
     </div>
 </div>
@@ -893,10 +1000,10 @@
         <div class="about-grid">
             <div class="about-text">
                 <div class="section-label">Over Inicio Vending</div>
-                <h2 class="section-title">Premium outdoor vending, volledig ontzorgd</h2>
-                <p>Inicio Vending is gespecialiseerd in het plaatsen en exploiteren van premium outdoor vendingmachines op drukbezochte locaties in Nederland.</p>
-                <p>Wij investeren volledig in de machine, installatie en exploitatie. U stelt enkel een geschikte locatie beschikbaar en deelt mee in de omzet. Van assortiment en bevoorrading tot realtime monitoring, onderhoud en klantenservice â wij regelen het complete beheer.</p>
-                <p>Onze vendingmachine met 22" schermopbouw en robuuste outdoor ombouw onderscheidt zich door premium uitstraling, weersbestendigheid en maximale uptime.</p>
+                <h2 class="section-title">Premium outdoor vending, volledig verzorgd</h2>
+                <p>Inicio Vending ontwikkelt, plaatst en exploiteert premium outdoor vending machines op locaties met structurele doorloop in heel Nederland.</p>
+                <p>Wij investeren in de machine, installatie en exploitatie. U stelt een geschikte locatie beschikbaar en profiteert mee van de omzet. Van assortiment en bevoorrading tot realtime monitoring, onderhoud en klantenservice: wij verzorgen het volledige beheer.</p>
+                <p>Onze machine combineert een 22 inch touchscreen met een robuuste outdoor ombouw voor een representatieve uitstraling, weersbestendigheid en maximale uptime.</p>
             </div>
             <div class="about-features">
                 <div class="about-feature fade-up">
@@ -929,39 +1036,39 @@
     <div class="container">
         <div class="section-header">
             <div class="section-label">Waarom Inicio Vending</div>
-            <h2 class="section-title">Samenwerken met Inicio betekent</h2>
-            <p class="section-desc">Wij zorgen voor alles. U profiteert van extra omzet en service voor uw bezoekers.</p>
+            <h2 class="section-title">Samenwerken met Inicio betekent zorgeloos groeien</h2>
+            <p class="section-desc">Wij verzorgen de operatie van A tot Z, terwijl uw locatie profiteert van extra service en aanvullende omzet.</p>
         </div>
         <div class="usp-grid">
             <div class="usp-card fade-up">
                 <div class="usp-num">01</div>
                 <h4>Geen investering nodig</h4>
-                <p>Wij investeren volledig in machine, installatie en beheer. U maakt geen kosten.</p>
+                <p>Wij investeren in machine, installatie en beheer. U start zonder investering.</p>
             </div>
             <div class="usp-card fade-up">
                 <div class="usp-num">02</div>
                 <h4>Volledig ontzorgd</h4>
-                <p>Van plaatsing tot bevoorrading, onderhoud en klantenservice â wij regelen alles.</p>
+                <p>Van plaatsing tot bevoorrading, onderhoud en klantenservice - wij regelen alles.</p>
             </div>
             <div class="usp-card fade-up">
                 <div class="usp-num">03</div>
                 <h4>Datagedreven optimalisatie</h4>
-                <p>Wij analyseren verkoopdata om assortiment en prestaties continu te verbeteren.</p>
+                <p>Wij gebruiken verkoopdata om assortiment, voorraad en prestaties continu te verbeteren.</p>
             </div>
             <div class="usp-card fade-up">
                 <div class="usp-num">04</div>
                 <h4>Deel mee in de omzet</h4>
-                <p>U ontvangt een eerlijke vergoeding per verkoop. Structurele extra inkomsten.</p>
+                <p>U ontvangt een heldere vergoeding per verkoop en bouwt aan structurele extra inkomsten.</p>
             </div>
             <div class="usp-card fade-up">
                 <div class="usp-num">05</div>
                 <h4>Altijd beschikbaar</h4>
-                <p>24/7 open, 365 dagen per jaar. Uw bezoekers kunnen altijd terecht.</p>
+                <p>24/7 beschikbaar, 365 dagen per jaar. Uw bezoekers kunnen op elk moment terecht.</p>
             </div>
             <div class="usp-card fade-up">
                 <div class="usp-num">06</div>
                 <h4>A-merk assortiment</h4>
-                <p>Breed aanbod met bekende merken, afgestemd op uw locatie en doelgroep.</p>
+                <p>Een slim samengesteld assortiment, afgestemd op uw locatie, bezoekersprofiel en piekmomenten.</p>
             </div>
         </div>
     </div>
@@ -973,46 +1080,46 @@
         <div class="product-layout">
             <div class="product-visual">
                 <div class="product-machine-svg"></div>
-                <span class="product-tag-outdoor">Outdoor Ready</span>
+                <span class="product-tag-outdoor">Outdoor geschikt</span>
             </div>
             <div>
                 <div class="section-label">Onze Machine</div>
-                <h2 class="section-title">De Inicio Vendingmachine</h2>
-                <p class="section-desc" style="margin-bottom:40px;">Ons paradepaardje: een krachtige vendingmachine met premium 22" schermopbouw en robuuste outdoor ombouw. Gebouwd om buiten te presteren.</p>
+                <h2 class="section-title">De Inicio vending machine</h2>
+                <p class="section-desc" style="margin-bottom:40px;">Een krachtige vending machine met premium 22 inch schermopbouw en een robuuste outdoor behuizing. Ontwikkeld voor betrouwbare prestaties op buitenlocaties.</p>
                 <div class="product-specs">
                     <div class="product-spec fade-up">
                         <div class="product-spec-num">1</div>
                         <div>
-                            <h4>Betrouwbaar Platform</h4>
-                            <p>Bewezen technologie met energiezuinige koeling, hoge capaciteit en maximale betrouwbaarheid.</p>
+                            <h4>Betrouwbaar platform</h4>
+                            <p>Bewezen technologie met energiezuinige koeling, hoge capaciteit en stabiele prestaties.</p>
                         </div>
                     </div>
                     <div class="product-spec fade-up">
                         <div class="product-spec-num">2</div>
                         <div>
-                            <h4>22" Interactief Touchscreen</h4>
-                            <p>Groot display voor intuÃ¯tieve productselectie, advertentiecontent en promoties op maat.</p>
+                            <h4>22" interactief touchscreen</h4>
+                            <p>Groot display voor intuïtieve productselectie, promoties en advertentiecontent op maat.</p>
                         </div>
                     </div>
                     <div class="product-spec fade-up">
                         <div class="product-spec-num">3</div>
                         <div>
-                            <h4>Premium Outdoor Ombouw</h4>
-                            <p>Stevige behuizing voor weersbestendigheid en vandaalbestendigheid. Gepoedercoat in gewenste kleur.</p>
+                            <h4>Premium outdoor ombouw</h4>
+                            <p>Stevige behuizing voor weersbestendigheid en vandaalbestendigheid, afgewerkt in een passende kleurstelling.</p>
                         </div>
                     </div>
                     <div class="product-spec fade-up">
                         <div class="product-spec-num">4</div>
                         <div>
                             <h4>Altijd in de gaten</h4>
-                            <p>Wij houden op afstand bij wanneer de machine gevuld moet worden, goed koelt en naar behoren werkt â zodat storingen worden voorkomen.</p>
+                            <p>Wij houden op afstand bij wanneer de machine gevuld moet worden, goed koelt en naar behoren werkt - zodat storingen worden voorkomen.</p>
                         </div>
                     </div>
                     <div class="product-spec fade-up">
                         <div class="product-spec-num">5</div>
                         <div>
-                            <h4>Cashless Betaalsysteem</h4>
-                            <p>Pin, contactloos, Apple Pay, Google Pay. Geen contant geld nodig â veilig en snel.</p>
+                            <h4>Cashless betaalsysteem</h4>
+                            <p>Pin, contactloos, Apple Pay en Google Pay. Snel, veilig en volledig zonder contant geld.</p>
                         </div>
                     </div>
                 </div>
@@ -1026,8 +1133,8 @@
     <div class="container">
         <div class="section-header">
             <div class="section-label">Doellocaties</div>
-            <h2 class="section-title">Waar Inicio het best presteert</h2>
-            <p class="section-desc">Onze machines zijn specifiek ontwikkeld voor buitenlocaties met structurele bezoekersstromen.</p>
+            <h2 class="section-title">Waar Inicio het meeste rendement oplevert</h2>
+            <p class="section-desc">Onze machines zijn ontwikkeld voor buitenlocaties met zichtbaarheid, doorloop en terugkerende bezoekers.</p>
         </div>
         <div class="locaties-grid">
             <div class="locatie-card fade-up">
@@ -1035,28 +1142,28 @@
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 01-.659 1.591l-5.432 5.432a2.25 2.25 0 00-.659 1.591v2.927a2.25 2.25 0 01-1.244 2.013L12 21.35V3z"/></svg>
                 </div>
                 <h4>Tankstations</h4>
-                <p>Hoge doorstroom met impulsaankopen. Perfecte match voor snacks en koude dranken onderweg.</p>
+                <p>Hoge doorstroom en veel impulsaankopen. Ideaal voor snacks en koude dranken onderweg.</p>
             </div>
             <div class="locatie-card fade-up">
                 <div class="locatie-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21"/></svg>
                 </div>
                 <h4>Bedrijventerreinen</h4>
-                <p>Medewerkers en bezoekers op elk moment voorzien van verfrissingen en snacks.</p>
+                <p>Voorzie medewerkers en bezoekers op elk moment van verfrissingen en snacks.</p>
             </div>
             <div class="locatie-card fade-up">
                 <div class="locatie-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>
                 </div>
                 <h4>Wasstraten</h4>
-                <p>Wachtende klanten converteren naar kopers. Extra omzet tijdens de wasbeurt.</p>
+                <p>Maak van wachttijd een verkoopmoment en genereer extra omzet tijdens de wasbeurt.</p>
             </div>
             <div class="locatie-card fade-up">
                 <div class="locatie-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
                 </div>
                 <h4>Laadpleinen</h4>
-                <p>EV-rijders wachten 20â45 minuten. De ideale kans voor een snack of drankje.</p>
+                <p>EV-rijders wachten vaak 20 tot 45 minuten. Het ideale moment voor een snack of drankje.</p>
             </div>
         </div>
     </div>
@@ -1065,9 +1172,9 @@
 <!-- WERKWIJZE -->
 <section class="section section-cream" id="werkwijze">
     <div class="container">
-        <div class="section-header" style="text-align:center;">
+        <div class="section-header centered">
             <div class="section-label">Werkwijze</div>
-            <h2 class="section-title">Van aanvraag tot exploitatie</h2>
+            <h2 class="section-title">Van eerste aanvraag tot dagelijkse exploitatie</h2>
         </div>
         <div class="werkwijze-timeline">
             <div class="werkwijze-step fade-up">
@@ -1083,7 +1190,7 @@
             <div class="werkwijze-step fade-up">
                 <div class="werkwijze-dot">3</div>
                 <h4>Installatie</h4>
-                <p>Ons team plaatst de machine op uw locatie en sluit hem aan op een 220V aansluiting. Internet en betaalsysteem zitten al ingebouwd in de machine.</p>
+                <p>Ons team plaatst de machine op uw locatie en sluit deze aan op een 220V aansluiting. Internet en betaalsysteem zijn al geïntegreerd.</p>
             </div>
             <div class="werkwijze-step fade-up">
                 <div class="werkwijze-dot">4</div>
@@ -1102,42 +1209,42 @@
 <!-- FAQ -->
 <section class="section section-white" id="faq">
     <div class="container">
-        <div class="section-header" style="text-align:center;">
+        <div class="section-header centered">
             <div class="section-label">Veelgestelde vragen</div>
-            <h2 class="section-title">FAQ</h2>
+            <h2 class="section-title">Antwoorden op veelgestelde vragen</h2>
         </div>
         <div class="faq-grid">
             <div class="faq-item">
-                <button class="faq-q">Wat kost het om een Inicio machine te plaatsen?</button>
-                <div class="faq-a"><p>Niets. Inicio Vending investeert volledig in de machine, installatie, bevoorrading en exploitatie. U maakt geen kosten. Als partner zorgt u enkel voor een 220V aansluiting.</p></div>
+                <button class="faq-q" type="button" aria-expanded="false">Wat kost het om een Inicio machine te plaatsen?</button>
+                <div class="faq-a"><p>Dat kost u niets. Inicio Vending investeert in de machine, installatie, bevoorrading en exploitatie. U hoeft alleen een geschikte locatie met een 220V aansluiting beschikbaar te stellen.</p></div>
             </div>
             <div class="faq-item">
-                <button class="faq-q">Hoe verdien ik als partner?</button>
-                <div class="faq-a"><p>U ontvangt 1 keer per jaar een omzetvergoeding en een rapportage over de verkopen op uw locatie. Als indicatie: circa â¬1.500 per jaar per locatie â afhankelijk van het aantal verkopen kan dit meer zijn. Hoe meer locaties, hoe hoger uw totale vergoeding.</p></div>
+                <button class="faq-q" type="button" aria-expanded="false">Hoe verdien ik als partner?</button>
+                <div class="faq-a"><p>U ontvangt eenmaal per jaar een omzetvergoeding, inclusief rapportage van de verkopen op uw locatie. Als indicatie kunt u denken aan circa &euro;1.500 per jaar per locatie, afhankelijk van het aantal transacties.</p></div>
             </div>
             <div class="faq-item">
-                <button class="faq-q">Welke ruimte is nodig?</button>
+                <button class="faq-q" type="button" aria-expanded="false">Welke ruimte is nodig?</button>
                 <div class="faq-a"><p>De machine met ombouw vraagt een oppervlak van circa 1 x 1,5 meter.</p></div>
             </div>
             <div class="faq-item">
-                <button class="faq-q">Wie regelt de bevoorrading?</button>
-                <div class="faq-a"><p>Wij verzorgen de volledige bevoorrading op basis van realtime voorraaddata. U hoeft niets te doen.</p></div>
+                <button class="faq-q" type="button" aria-expanded="false">Wie regelt de bevoorrading?</button>
+                <div class="faq-a"><p>Wij verzorgen de volledige bevoorrading op basis van realtime voorraaddata. U heeft daar geen omkijken naar.</p></div>
             </div>
             <div class="faq-item">
-                <button class="faq-q">Wie is verantwoordelijk bij storingen?</button>
+                <button class="faq-q" type="button" aria-expanded="false">Wie is verantwoordelijk bij storingen?</button>
                 <div class="faq-a"><p>Inicio Vending. Onze machines worden op afstand gemonitord en bij storingen sturen wij binnen 24 uur een monteur.</p></div>
             </div>
             <div class="faq-item">
-                <button class="faq-q">Wat gebeurt er bij vandalisme?</button>
-                <div class="faq-a"><p>Onze outdoor ombouw is vandaalbestendig. Bij schade regelen wij reparatie of vervanging â dat risico ligt bij ons.</p></div>
+                <button class="faq-q" type="button" aria-expanded="false">Wat gebeurt er bij vandalisme?</button>
+                <div class="faq-a"><p>Onze outdoor ombouw is vandaalbestendig. Bij schade regelen wij reparatie of vervanging - dat risico ligt bij ons.</p></div>
             </div>
             <div class="faq-item">
-                <button class="faq-q">Kan het assortiment aangepast worden?</button>
-                <div class="faq-a"><p>Ja. Wij stemmen het assortiment af op uw locatie en doelgroep op basis van verkoopdata en voorkeur.</p></div>
+                <button class="faq-q" type="button" aria-expanded="false">Kan het assortiment aangepast worden?</button>
+                <div class="faq-a"><p>Ja. Wij stemmen het assortiment af op uw locatie, doelgroep en verkoopdata, zodat het aanbod optimaal aansluit.</p></div>
             </div>
             <div class="faq-item">
-                <button class="faq-q">Hoe snel kan een machine geplaatst worden?</button>
-                <div class="faq-a"><p>Na goedkeuring van de locatiecheck kan een machine doorgaans binnen 2â4 weken geplaatst worden.</p></div>
+                <button class="faq-q" type="button" aria-expanded="false">Hoe snel kan een machine geplaatst worden?</button>
+                <div class="faq-a"><p>Na goedkeuring van de locatiecheck kan een machine doorgaans binnen 2-4 weken geplaatst worden.</p></div>
             </div>
         </div>
     </div>
@@ -1146,10 +1253,10 @@
 <!-- CTA -->
 <section class="cta-section">
     <div class="container">
-        <h2>Gratis locatiecheck.<br>Geen investering. Wel extra omzet.</h2>
-        <p>Ontdek vrijblijvend wat Inicio Vending voor uw locatie kan betekenen.</p>
+        <h2>Vraag een gratis locatiecheck aan.<br>Geen investering, wel extra omzet.</h2>
+        <p>Ontdek vrijblijvend wat een Inicio vending machine voor uw locatie kan betekenen.</p>
         <a href="#leads" class="btn-primary" style="display:inline-flex;">
-            Plan mijn locatiecheck
+            Start de locatiecheck
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
         </a>
     </div>
@@ -1161,7 +1268,7 @@
         <div class="form-info">
             <div class="section-label">Locatiecheck aanvragen</div>
             <h2 class="section-title">Ontdek het potentieel van uw locatie</h2>
-            <p class="section-desc">Vul het formulier in en wij nemen binnen 24 uur contact met u op voor een vrijblijvende locatiecheck.</p>
+            <p class="section-desc">Laat uw gegevens achter en wij nemen binnen 24 uur contact met u op voor een vrijblijvende locatiecheck.</p>
             <div class="form-trust">
                 <div class="form-trust-item">
                     <div class="form-trust-check">
@@ -1185,7 +1292,7 @@
                     <div class="form-trust-check">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
                     </div>
-                    24/7 service & monitoring
+                    24/7 service en monitoring
                 </div>
             </div>
         </div>
@@ -1229,9 +1336,9 @@
                         <label class="form-label">Dagelijks bezoekersaantal</label>
                         <select name="bezoekers_per_dag" class="form-select">
                             <option value="">Selecteer...</option>
-                            <option>0 â 100</option>
-                            <option>100 â 500</option>
-                            <option>500 â 1.000</option>
+                            <option>0 - 100</option>
+                            <option>100 - 500</option>
+                            <option>500 - 1.000</option>
                             <option>1.000+</option>
                         </select>
                     </div>
@@ -1241,9 +1348,9 @@
                     <textarea name="bericht" class="form-textarea" placeholder="Vertel ons meer over uw locatie..."></textarea>
                 </div>
                 <div id="form-success" style="display:none; background:#f0fff4; border:1px solid #68d391; border-radius:10px; padding:16px; margin-bottom:16px; color:#276749; font-weight:600; text-align:center;">
-                    â Bedankt! We nemen binnen 24 uur contact met u op.
+                    Bedankt. We nemen binnen 24 uur contact met u op.
                 </div>
-                <button type="submit" class="form-submit">Plan mijn gratis locatiecheck â</button>
+                <button type="submit" class="form-submit">Vraag mijn gratis locatiecheck aan &rarr;</button>
             </form>
             <script>
                 document.getElementById('locatieform').addEventListener('submit', async function(e) {
@@ -1260,9 +1367,9 @@
                     if (res.ok) {
                         form.reset();
                         document.getElementById('form-success').style.display = 'block';
-                        btn.textContent = 'Verstuurd â';
+                        btn.textContent = 'Verstuurd';
                     } else {
-                        btn.textContent = 'Er ging iets mis â probeer opnieuw';
+                        btn.textContent = 'Er ging iets mis - probeer opnieuw';
                         btn.disabled = false;
                     }
                 });
@@ -1276,13 +1383,13 @@
     <div class="container">
         <div class="section-header">
             <div class="section-label">Contact</div>
-            <h2 class="section-title">Neem contact op</h2>
+            <h2 class="section-title">Neem contact met ons op</h2>
         </div>
         <div class="contact-grid">
             <div class="contact-block">
                 <div class="contact-label">Telefoon</div>
                 <div class="contact-value"><a href="tel:+31617352787">06 17352787</a></div>
-                <div class="contact-sub">MaâVr: 08:00 â 18:00</div>
+                <div class="contact-sub">Maandag t/m vrijdag, 08:00 - 18:00</div>
             </div>
             <div class="contact-block">
                 <div class="contact-label">E-mail</div>
@@ -1292,6 +1399,7 @@
         </div>
     </div>
 </section>
+</main>
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -1305,7 +1413,7 @@
             <a href="#contact">Contact</a>
         </div>
     </div>
-    <div class="footer-copy">Â© 2026 Inicio Vending. Alle rechten voorbehouden.</div>
+    <div class="footer-copy">&copy; 2026 Inicio Vending. Alle rechten voorbehouden.</div>
 </footer>
 
 <script>
@@ -1319,14 +1427,16 @@ window.addEventListener('scroll', () => {
 const navLinks = document.getElementById('navLinks');
 const navMobile = document.getElementById('navMobile');
 navMobile.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
+    const isOpen = navLinks.classList.toggle('open');
     navMobile.classList.toggle('active');
+    navMobile.setAttribute('aria-expanded', String(isOpen));
 });
 // Close mobile menu when clicking a link
 navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('open');
         navMobile.classList.remove('active');
+        navMobile.setAttribute('aria-expanded', 'false');
     });
 });
 
@@ -1336,8 +1446,14 @@ document.querySelectorAll('.faq-q').forEach(btn => {
         const item = btn.parentElement;
         const wasOpen = item.classList.contains('open');
         // close all in same grid
-        item.closest('.faq-grid').querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-        if (!wasOpen) item.classList.add('open');
+        item.closest('.faq-grid').querySelectorAll('.faq-item').forEach(i => {
+            i.classList.remove('open');
+            i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+        });
+        if (!wasOpen) {
+            item.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+        }
     });
 });
 
@@ -1359,6 +1475,8 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
         const target = document.querySelector(a.getAttribute('href'));
         if (target) target.scrollIntoView({ behavior: 'smooth' });
         document.getElementById('navLinks').classList.remove('open');
+        document.getElementById('navMobile').classList.remove('active');
+        document.getElementById('navMobile').setAttribute('aria-expanded', 'false');
     });
 });
 </script>
