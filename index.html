@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GS83YNLW35"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        window.inicioAnalyticsLoaded = false;
+        window.inicioAnalyticsId = 'G-GS83YNLW35';
+        gtag('consent', 'default', {
+            analytics_storage: 'denied',
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied'
+        });
 
-        gtag('config', 'G-GS83YNLW35');
+        function loadAnalytics() {
+            if (window.inicioAnalyticsLoaded) return;
+            const script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.inicioAnalyticsId;
+            document.head.appendChild(script);
+            gtag('js', new Date());
+            gtag('config', window.inicioAnalyticsId);
+            window.inicioAnalyticsLoaded = true;
+        }
     </script>
     <title>Inicio Vending - Outdoor vending machines voor locaties met doorloop</title>
     <meta name="description" content="Inicio Vending plaatst en exploiteert premium outdoor vending machines op drukbezochte locaties. Geen investering, volledige ontzorging en 24/7 service.">
@@ -801,6 +815,78 @@
             max-width: 1200px; margin-left: auto; margin-right: auto;
         }
 
+        /* COOKIE BANNER */
+        .cookie-banner {
+            position: fixed;
+            left: 24px;
+            right: 24px;
+            bottom: 24px;
+            z-index: 300;
+            display: none;
+            justify-content: center;
+            pointer-events: none;
+        }
+        .cookie-banner.visible {
+            display: flex;
+        }
+        .cookie-card {
+            width: min(100%, 980px);
+            background: rgba(15, 17, 20, 0.96);
+            color: var(--white);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 24px;
+            box-shadow: 0 24px 80px rgba(0,0,0,0.24);
+            backdrop-filter: blur(18px);
+            padding: 24px 24px 20px;
+            display: grid;
+            grid-template-columns: 1.7fr auto;
+            gap: 24px;
+            align-items: end;
+            pointer-events: auto;
+        }
+        .cookie-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .cookie-text {
+            font-size: 14px;
+            line-height: 1.7;
+            color: rgba(255,255,255,0.78);
+            max-width: 680px;
+        }
+        .cookie-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+        .cookie-btn {
+            appearance: none;
+            border: 1px solid rgba(255,255,255,0.14);
+            background: transparent;
+            color: var(--white);
+            padding: 14px 18px;
+            border-radius: 12px;
+            font-family: var(--font-body);
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s var(--ease-out);
+        }
+        .cookie-btn:hover {
+            border-color: rgba(255,255,255,0.26);
+            background: rgba(255,255,255,0.05);
+        }
+        .cookie-btn-primary {
+            background: var(--red);
+            border-color: var(--red);
+        }
+        .cookie-btn-primary:hover {
+            background: var(--red-light);
+            border-color: var(--red-light);
+        }
+
         /* ANIMATIONS */
         .fade-up {
             opacity: 0; transform: translateY(30px);
@@ -883,6 +969,23 @@
             .footer { padding: 40px 20px 32px; }
             .footer-inner { flex-direction: column; gap: 24px; text-align: center; }
             .footer-links { flex-wrap: wrap; justify-content: center; gap: 16px; }
+            .cookie-banner {
+                left: 16px;
+                right: 16px;
+                bottom: 16px;
+            }
+            .cookie-card {
+                grid-template-columns: 1fr;
+                gap: 18px;
+                padding: 20px 18px 18px;
+                border-radius: 20px;
+            }
+            .cookie-actions {
+                justify-content: stretch;
+            }
+            .cookie-btn {
+                width: 100%;
+            }
         }
 
         /* Extra small phones */
@@ -1368,6 +1471,12 @@
                         form.reset();
                         document.getElementById('form-success').style.display = 'block';
                         btn.textContent = 'Verstuurd';
+                        if (window.inicioAnalyticsLoaded) {
+                            gtag('event', 'generate_lead', {
+                                event_category: 'formulier',
+                                event_label: 'locatiecheck'
+                            });
+                        }
                     } else {
                         btn.textContent = 'Er ging iets mis - probeer opnieuw';
                         btn.disabled = false;
@@ -1415,6 +1524,22 @@
     </div>
     <div class="footer-copy">&copy; 2026 Inicio Vending. Alle rechten voorbehouden.</div>
 </footer>
+
+<div class="cookie-banner" id="cookieBanner" aria-live="polite">
+    <div class="cookie-card">
+        <div>
+            <div class="cookie-title">Wij gebruiken analytics-cookies</div>
+            <p class="cookie-text">
+                Met analytics-cookies meten we hoe bezoekers de website gebruiken, zodat we de site kunnen verbeteren.
+                We activeren Google Analytics alleen als u toestemming geeft.
+            </p>
+        </div>
+        <div class="cookie-actions">
+            <button type="button" class="cookie-btn" id="cookieDecline">Weigeren</button>
+            <button type="button" class="cookie-btn cookie-btn-primary" id="cookieAccept">Accepteren</button>
+        </div>
+    </div>
+</div>
 
 <script>
 // Nav scroll effect
@@ -1478,6 +1603,57 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
         document.getElementById('navMobile').classList.remove('active');
         document.getElementById('navMobile').setAttribute('aria-expanded', 'false');
     });
+});
+
+// Cookie consent
+const cookieBanner = document.getElementById('cookieBanner');
+const cookieAccept = document.getElementById('cookieAccept');
+const cookieDecline = document.getElementById('cookieDecline');
+const consentKey = 'inicio_cookie_consent';
+
+function hideCookieBanner() {
+    cookieBanner.classList.remove('visible');
+}
+
+function showCookieBanner() {
+    cookieBanner.classList.add('visible');
+}
+
+function enableAnalytics() {
+    gtag('consent', 'update', {
+        analytics_storage: 'granted'
+    });
+    loadAnalytics();
+}
+
+function disableAnalytics() {
+    gtag('consent', 'update', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied'
+    });
+}
+
+const storedConsent = localStorage.getItem(consentKey);
+if (storedConsent === 'accepted') {
+    enableAnalytics();
+} else if (storedConsent === 'declined') {
+    disableAnalytics();
+} else {
+    showCookieBanner();
+}
+
+cookieAccept.addEventListener('click', () => {
+    localStorage.setItem(consentKey, 'accepted');
+    enableAnalytics();
+    hideCookieBanner();
+});
+
+cookieDecline.addEventListener('click', () => {
+    localStorage.setItem(consentKey, 'declined');
+    disableAnalytics();
+    hideCookieBanner();
 });
 </script>
 
