@@ -376,6 +376,253 @@
             letter-spacing: 0.5px; text-transform: uppercase;
         }
 
+        .hero-microcopy {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 18px;
+        }
+        .hero-microcopy span {
+            display: inline-flex;
+            align-items: center;
+            padding: 9px 14px;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(255,255,255,0.10);
+            color: rgba(255,255,255,0.82);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        .home-signal-strip {
+            padding: 26px 40px 0;
+            background: var(--white);
+        }
+        .home-signal-track {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+        .home-signal-card {
+            background: linear-gradient(180deg, #121419, #181b22);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 20px;
+            padding: 22px 20px;
+        }
+        .home-signal-kicker {
+            display: inline-flex;
+            margin-bottom: 12px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--red-light);
+        }
+        .home-signal-card h3 {
+            font-size: 18px;
+            line-height: 1.25;
+            color: var(--white);
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        .home-signal-card p {
+            color: rgba(255,255,255,0.7);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .home-editorial {
+            padding: 36px 40px 96px;
+            background:
+                radial-gradient(circle at top left, rgba(212,0,42,0.05), transparent 28%),
+                linear-gradient(180deg, var(--white), var(--cream));
+        }
+        .home-editorial-shell {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 28px;
+            align-items: stretch;
+        }
+        .home-editorial-main {
+            background: var(--white);
+            border: 1px solid var(--silver-light);
+            border-radius: 30px;
+            padding: 44px 42px;
+            box-shadow: 0 22px 60px rgba(0,0,0,0.05);
+        }
+        .home-editorial-copy {
+            display: grid;
+            gap: 18px;
+            margin-top: 18px;
+        }
+        .home-editorial-copy p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+        .home-editorial-side {
+            display: grid;
+            gap: 18px;
+        }
+        .home-problem-card,
+        .home-proof-card {
+            border-radius: 28px;
+            padding: 32px 28px;
+        }
+        .home-problem-card {
+            background: linear-gradient(180deg, #121419, #171a20);
+            color: var(--white);
+            min-height: 250px;
+        }
+        .home-problem-card h3,
+        .home-proof-card h3 {
+            font-size: 24px;
+            line-height: 1.2;
+            margin-bottom: 14px;
+            font-weight: 800;
+        }
+        .home-problem-card p {
+            font-size: 15px;
+            line-height: 1.75;
+            color: rgba(255,255,255,0.74);
+        }
+        .home-proof-card {
+            background: linear-gradient(180deg, #fff6f8, #ffffff);
+            border: 1px solid rgba(212,0,42,0.10);
+        }
+        .home-proof-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            margin-top: 18px;
+        }
+        .home-proof-item {
+            background: var(--white);
+            border: 1px solid var(--silver-light);
+            border-radius: 18px;
+            padding: 18px 16px;
+        }
+        .home-proof-value {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--dark);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        .home-proof-value span {
+            color: var(--red);
+        }
+        .home-proof-item p {
+            font-size: 13px;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        .home-choice {
+            padding: 0 40px 110px;
+            background: var(--cream);
+        }
+        .home-choice-shell {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: linear-gradient(180deg, #14171d, #0f1114);
+            border-radius: 34px;
+            padding: 42px;
+            color: var(--white);
+            overflow: hidden;
+            position: relative;
+        }
+        .home-choice-shell::before {
+            content: '';
+            position: absolute;
+            inset: auto -10% -35% auto;
+            width: 360px;
+            height: 360px;
+            background: radial-gradient(circle, rgba(212,0,42,0.20), transparent 68%);
+            pointer-events: none;
+        }
+        .home-choice-header {
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+            align-items: end;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        .home-choice-header .section-title {
+            color: var(--white);
+            margin-bottom: 0;
+            max-width: 620px;
+        }
+        .home-choice-header .section-desc {
+            color: rgba(255,255,255,0.7);
+            max-width: 420px;
+        }
+        .home-choice-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+            position: relative;
+            z-index: 1;
+        }
+        .home-choice-card {
+            border-radius: 28px;
+            padding: 30px;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .home-choice-card.outdoor-card {
+            background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03));
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .home-choice-card.indoor-card {
+            background: linear-gradient(180deg, rgba(212,0,42,0.18), rgba(212,0,42,0.08));
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .home-choice-card h3 {
+            font-size: 30px;
+            line-height: 1.1;
+            font-weight: 800;
+            margin-bottom: 14px;
+        }
+        .home-choice-card p {
+            font-size: 15px;
+            line-height: 1.75;
+            color: rgba(255,255,255,0.78);
+            margin-bottom: 18px;
+        }
+        .home-choice-points {
+            display: grid;
+            gap: 10px;
+            margin-bottom: 26px;
+            padding-left: 20px;
+        }
+        .home-choice-points li {
+            font-size: 14px;
+            line-height: 1.6;
+            color: rgba(255,255,255,0.9);
+        }
+        .home-choice-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--white);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .home-choice-link:hover {
+            color: var(--red-light);
+        }
+
         /* SECTIONS COMMON */
         .section {
             padding: 120px 40px;
@@ -1098,6 +1345,10 @@
         @media (max-width: 1024px) {
             .hero-grid { grid-template-columns: 1fr; gap: 40px; }
             .hero-visual { display: none; }
+            .home-signal-track { grid-template-columns: repeat(2, 1fr); }
+            .home-editorial-shell { grid-template-columns: 1fr; }
+            .home-choice-header { flex-direction: column; align-items: flex-start; }
+            .home-choice-grid { grid-template-columns: 1fr; }
             .about-grid { grid-template-columns: 1fr; gap: 48px; }
             .usp-grid { grid-template-columns: repeat(2, 1fr); }
             .product-layout { grid-template-columns: 1fr; gap: 48px; }
@@ -1134,7 +1385,19 @@
             .hero-tag { font-size: 11px; padding: 10px 16px; letter-spacing: 1px; }
             .hero-sub { font-size: 15px; }
             .hero-actions { flex-direction: column; }
+            .hero-microcopy { flex-direction: column; }
+            .hero-microcopy span { justify-content: center; }
             .btn-primary, .btn-secondary { justify-content: center; width: 100%; padding: 16px 24px; }
+            .home-signal-strip { padding: 22px 20px 0; }
+            .home-signal-track { grid-template-columns: 1fr; gap: 14px; }
+            .home-editorial { padding: 28px 20px 64px; }
+            .home-editorial-main { padding: 30px 24px; border-radius: 24px; }
+            .home-problem-card, .home-proof-card { padding: 26px 22px; border-radius: 24px; }
+            .home-proof-grid { grid-template-columns: 1fr; }
+            .home-choice { padding: 0 20px 64px; }
+            .home-choice-shell { padding: 28px 20px; border-radius: 28px; }
+            .home-choice-card { padding: 24px 22px; border-radius: 22px; }
+            .home-choice-card h3 { font-size: 24px; }
             .stats { padding: 40px 20px; }
             .stats-grid { grid-template-columns: repeat(2, 1fr); border-radius: 16px; }
             .stat-item { padding: 24px 16px; }
@@ -1263,99 +1526,110 @@
     </div>
 </section>
 
-<!-- MARQUEE -->
-<div class="marquee-section">
-    <div class="marquee-track">
-        <span>Tankstations</span><span>Laadpleinen</span><span>Kantoren</span><span>Scholen</span>
-        <span>Wasstraten</span><span>Bedrijfsverzamelgebouwen</span><span>Parkeerlocaties</span><span>Ontvangstruimtes</span>
-        <span>Tankstations</span><span>Laadpleinen</span><span>Kantoren</span><span>Scholen</span>
-        <span>Wasstraten</span><span>Bedrijfsverzamelgebouwen</span><span>Parkeerlocaties</span><span>Ontvangstruimtes</span>
-    </div>
-</div>
-
-<!-- STATS -->
-<div class="stats">
-    <div class="stats-grid">
-        <div class="stat-item">
-            <div class="stat-value">24/7</div>
-            <div class="stat-label">Beschikbaar</div>
+<div class="home-signal-strip">
+    <div class="home-signal-track">
+        <div class="home-signal-card fade-up">
+            <div class="home-signal-kicker">Geen investering</div>
+            <h3>Wij investeren in machine, plaatsing en exploitatie.</h3>
+            <p>Uw organisatie hoeft geen vendingtraject zelf op te zetten of te financieren.</p>
         </div>
-        <div class="stat-item">
-            <div class="stat-value">100<span>%</span></div>
-            <div class="stat-label">Cashless</div>
+        <div class="home-signal-card fade-up">
+            <div class="home-signal-kicker">Full service</div>
+            <h3>Bevoorrading, onderhoud en service volledig in beheer.</h3>
+            <p>Wij verzorgen de dagelijkse operatie zodat uw team niet belast wordt.</p>
         </div>
-        <div class="stat-item">
-            <div class="stat-value">0<span>&euro;</span></div>
-            <div class="stat-label">Investering</div>
+        <div class="home-signal-card fade-up">
+            <div class="home-signal-kicker">Extra omzet</div>
+            <h3>Van ongebruikte ruimte naar een nieuw verdienmoment.</h3>
+            <p>Geschikt voor locaties waar doorloop, wachttijd of verblijf direct commercieel potentieel hebben.</p>
         </div>
-        <div class="stat-item">
-            <div class="stat-value">Real<span>time</span></div>
-            <div class="stat-label">Monitoring</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-value">22<span>"</span></div>
-            <div class="stat-label">Display</div>
+        <div class="home-signal-card fade-up">
+            <div class="home-signal-kicker">Keuzehulp</div>
+            <h3>Indoor of outdoor: wij helpen u naar de juiste route.</h3>
+            <p>De homepage geeft richting, de conceptpagina’s geven de diepte per oplossing.</p>
         </div>
     </div>
 </div>
 
-<!-- ABOUT -->
-<section class="section section-cream" id="about">
-    <div class="container">
-        <div class="about-grid">
-            <div class="about-text">
-                <div class="section-label">Het Probleem</div>
-                <h2 class="section-title">Veel locaties laten omzet en service liggen zonder het door te hebben</h2>
-                <p>Bezoekers wachten, medewerkers zoeken gemak en vierkante meters blijven onbenut. Tegelijk ontbreekt vaak de tijd, kennis of capaciteit om daar zelf een goed vendingconcept van te maken.</p>
+<section class="home-editorial" id="about">
+    <div class="home-editorial-shell">
+        <div class="home-editorial-main fade-up">
+            <div class="section-label">Het Probleem</div>
+            <h2 class="section-title">Veel locaties hebben bezoekersstroom, maar halen daar commercieel nog te weinig uit</h2>
+            <div class="home-editorial-copy">
+                <p>Bezoekers wachten, medewerkers zoeken gemak en vierkante meters blijven onbenut. Tegelijk ontbreekt vaak de tijd, kennis of capaciteit om zelf een sterk vendingconcept op te zetten.</p>
                 <p>Inicio neemt dat volledig over. Wij beoordelen de potentie van uw locatie, kiezen de juiste vendingoplossing en exploiteren het complete concept zelf.</p>
-                <p>Zo verandert een gemiste kans in een hoogwaardige servicevoorziening die past bij uw locatie en bezoekersstroom.</p>
+                <p>Zo verandert een gemiste kans in een hoogwaardige servicevoorziening die past bij uw locatie, doelgroep en bezoekersstroom.</p>
             </div>
-            <div class="about-features">
-                <div class="about-feature fade-up">
-                    <div class="about-feature-bar"></div>
-                    <h4>Van ongebruikte ruimte naar rendement</h4>
-                    <p>Wij vertalen een geschikte plek naar een rendabel vendingconcept met minimale belasting voor uw organisatie.</p>
-                </div>
-                <div class="about-feature fade-up">
-                    <div class="about-feature-bar"></div>
-                    <h4>Volledig door ons geexploiteerd</h4>
-                    <p>Wij investeren, plaatsen, bevoorraden, onderhouden en beheren de complete oplossing zelf.</p>
-                </div>
-                <div class="about-feature fade-up">
-                    <div class="about-feature-bar"></div>
-                    <h4>Premium uitstraling</h4>
-                    <p>Een representatieve machine-opstelling met slimme productkeuze, passend bij locatie en doelgroep.</p>
-                </div>
-                <div class="about-feature fade-up">
-                    <div class="about-feature-bar"></div>
-                    <h4>Datagedreven optimalisatie</h4>
-                    <p>Wij sturen op verkoopdata, voorraadniveaus en prestaties om service en rendement continu te verbeteren.</p>
+        </div>
+        <div class="home-editorial-side">
+            <div class="home-problem-card fade-up">
+                <div class="section-label">Waarom werkt dit?</div>
+                <h3>Omdat gemak, timing en locatie samen omzet maken</h3>
+                <p>Wij kijken naar doorloop, wachttijd, zichtbaarheid en gebruiksmomenten. Op basis daarvan bepalen we of indoor of outdoor vending de sterkste route is voor uw locatie.</p>
+            </div>
+            <div class="home-proof-card fade-up">
+                <div class="section-label">De Basis</div>
+                <h3>Een premium platform dat wij zelf schalen en beheren</h3>
+                <div class="home-proof-grid">
+                    <div class="home-proof-item">
+                        <div class="home-proof-value">24/7</div>
+                        <p>Beschikbaar op locaties waar bereikbaarheid en gemak tellen.</p>
+                    </div>
+                    <div class="home-proof-item">
+                        <div class="home-proof-value">0<span>&euro;</span></div>
+                        <p>Investering vanuit uw organisatie voor machine en exploitatie.</p>
+                    </div>
+                    <div class="home-proof-item">
+                        <div class="home-proof-value">100<span>%</span></div>
+                        <p>Cashless, modern en eenvoudig in gebruik voor bezoekers.</p>
+                    </div>
+                    <div class="home-proof-item">
+                        <div class="home-proof-value">Real<span>time</span></div>
+                        <p>Monitoring en operationeel beheer door ons team.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="service-grid">
-            <div class="service-card fade-up">
-                <div class="service-tag">Outdoor</div>
-                <h3>Outdoor full service vending</h3>
-                <p>Voor buitenlocaties met zichtbaarheid, doorloop en behoefte aan 24/7 beschikbaarheid. Denk aan laadpleinen, tankstations en parkeerlocaties.</p>
-                <ul class="service-list">
-                    <li>Robuuste outdoor behuizing</li>
-                    <li>Gemaakt voor bereikbaarheid, zichtbaarheid en impulsaankopen</li>
-                    <li>Volledige exploitatie, bevoorrading en onderhoud door Inicio</li>
-                </ul>
-                <a href="outdoor.html" class="btn-primary">Meer over outdoor</a>
+    </div>
+</section>
+
+<section class="home-choice">
+    <div class="home-choice-shell">
+        <div class="home-choice-header">
+            <div>
+                <div class="section-label">Kies Uw Route</div>
+                <h2 class="section-title">Twee concepten, elk met een eigen commerciële logica</h2>
             </div>
-            <div class="service-card fade-up">
-                <div class="service-tag">Indoor</div>
-                <h3>Indoor full service vending</h3>
-                <p>Voor binnenlocaties waar gemak, herhaalbezoek en nette integratie in het gebouw centraal staan. Denk aan kantoren, scholen en bedrijfsgebouwen.</p>
-                <ul class="service-list">
-                    <li>Past bij dagelijkse gebruiksmomenten van bezoekers en medewerkers</li>
-                    <li>Assortiment afgestemd op gebouw, doelgroep en piekmomenten</li>
-                    <li>Full service exploitatie zonder extra werk voor uw organisatie</li>
-                </ul>
-                <a href="indoor.html" class="btn-primary">Meer over indoor</a>
-            </div>
+            <p class="section-desc">De homepage helpt u kiezen. Op de indoor- en outdoor-pagina’s ziet u vervolgens alle informatie die bij dat specifieke concept hoort.</p>
+        </div>
+        <div class="home-choice-grid">
+            <article class="home-choice-card outdoor-card fade-up">
+                <div>
+                    <div class="service-tag">Outdoor</div>
+                    <h3>Outdoor full service vending</h3>
+                    <p>Voor buitenlocaties met zichtbaarheid, doorloop en behoefte aan 24/7 beschikbaarheid. Ideaal voor laadpleinen, tankstations en parkeerlocaties.</p>
+                    <ul class="home-choice-points">
+                        <li>Robuuste opstelling voor buitenomstandigheden</li>
+                        <li>Interessant bij wachttijd, bereikbaarheid en impulsaankopen</li>
+                        <li>Volledige exploitatie, bevoorrading en onderhoud door Inicio</li>
+                    </ul>
+                </div>
+                <a href="outdoor.html" class="home-choice-link">Bekijk het outdoor concept</a>
+            </article>
+            <article class="home-choice-card indoor-card fade-up">
+                <div>
+                    <div class="service-tag">Indoor</div>
+                    <h3>Indoor full service vending</h3>
+                    <p>Voor binnenlocaties waar gemak, herhaalbezoek en nette integratie in het gebouw centraal staan. Ideaal voor kantoren, scholen en bedrijfsgebouwen.</p>
+                    <ul class="home-choice-points">
+                        <li>Past bij dagelijkse gebruiksmomenten van bezoekers en medewerkers</li>
+                        <li>Assortiment afgestemd op doelgroep en piekmomenten</li>
+                        <li>Full service exploitatie zonder extra werk voor uw organisatie</li>
+                    </ul>
+                </div>
+                <a href="indoor.html" class="home-choice-link">Bekijk het indoor concept</a>
+            </article>
         </div>
     </div>
 </section>
