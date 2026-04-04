@@ -26,8 +26,8 @@
             window.inicioAnalyticsLoaded = true;
         }
     </script>
-    <title>Inicio Vending - Outdoor vending machines voor locaties met doorloop</title>
-    <meta name="description" content="Inicio Vending plaatst en exploiteert premium outdoor vending machines op drukbezochte locaties. Geen investering, volledige ontzorging en 24/7 service.">
+    <title>Inicio Vending - Full service indoor en outdoor vending</title>
+    <meta name="description" content="Inicio Vending levert full service indoor en outdoor vending. Wij plaatsen, exploiteren en beheren de volledige vendingoplossing op uw locatie.">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#D4002A">
     <link rel="canonical" href="https://iniciovending.nl/">
@@ -38,17 +38,17 @@
     <meta property="og:locale" content="nl_NL">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Inicio Vending">
-    <meta property="og:title" content="Inicio Vending - Outdoor vending machines voor locaties met doorloop">
-    <meta property="og:description" content="Premium outdoor vending machines voor drukbezochte locaties. Geen investering, volledige ontzorging en 24/7 service.">
+    <meta property="og:title" content="Inicio Vending - Full service indoor en outdoor vending">
+    <meta property="og:description" content="Full service indoor en outdoor vending. Wij plaatsen, exploiteren en beheren de volledige vendingoplossing op uw locatie.">
     <meta property="og:url" content="https://iniciovending.nl/">
     <meta property="og:image" content="https://iniciovending.nl/og-image.svg">
     <meta property="og:image:type" content="image/svg+xml">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Inicio Vending - outdoor vending machines zonder investering">
+    <meta property="og:image:alt" content="Inicio Vending - full service indoor en outdoor vending">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Inicio Vending - Outdoor vending machines voor locaties met doorloop">
-    <meta name="twitter:description" content="Premium outdoor vending machines voor drukbezochte locaties. Geen investering, volledige ontzorging en 24/7 service.">
+    <meta name="twitter:title" content="Inicio Vending - Full service indoor en outdoor vending">
+    <meta name="twitter:description" content="Full service indoor en outdoor vending. Wij plaatsen, exploiteren en beheren de volledige vendingoplossing op uw locatie.">
     <meta name="twitter:image" content="https://iniciovending.nl/og-image.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,7 +63,7 @@
             "logo": "https://iniciovending.nl/favicon.svg",
             "email": "info@iniciovending.nl",
             "telephone": "+31617352787",
-            "description": "Inicio Vending plaatst en exploiteert premium outdoor vending machines op drukbezochte locaties in Nederland.",
+            "description": "Inicio Vending levert full service indoor en outdoor vending en exploiteert de volledige vendingoplossing op locaties in Nederland.",
             "areaServed": "NL",
             "address": {
                 "@type": "PostalAddress",
@@ -457,6 +457,52 @@
         }
         .about-feature p {
             font-size: 13px; line-height: 1.6; color: var(--text-light);
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+        }
+        .service-card {
+            background: var(--white);
+            border: 1px solid var(--silver-light);
+            border-radius: 20px;
+            padding: 32px 28px;
+        }
+        .service-tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: var(--red-soft);
+            color: var(--red);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+        .service-card h3 {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: var(--dark);
+        }
+        .service-card p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            margin-bottom: 18px;
+        }
+        .service-list {
+            display: grid;
+            gap: 10px;
+        }
+        .service-list span {
+            font-size: 14px;
+            color: var(--text-primary);
         }
 
         /* USPs */
@@ -954,6 +1000,7 @@
             .stat-label { font-size: 11px; }
             .about-features { grid-template-columns: 1fr; gap: 16px; }
             .about-feature { padding: 24px; }
+            .service-grid { grid-template-columns: 1fr; }
             .usp-grid { grid-template-columns: 1fr; }
             .usp-card { padding: 32px 24px; }
             .product-visual { min-height: 300px; padding: 40px; }
@@ -1036,9 +1083,9 @@
 <section class="hero" id="hero">
     <div class="hero-grid">
         <div>
-            <div class="hero-tag">&#9679; Premium outdoor vending</div>
+            <div class="hero-tag">&#9679; Full service vending</div>
             <h1>Extra omzet op uw locatie. <em>Zonder investering.</em></h1>
-            <p class="hero-sub">Inicio Vending plaatst en exploiteert premium outdoor vending machines op drukbezochte locaties. U stelt de locatie beschikbaar, wij verzorgen plaatsing, bevoorrading, service en exploitatie.</p>
+            <p class="hero-sub">Inicio Vending levert full service indoor en outdoor vending. U stelt de locatie beschikbaar, wij plaatsen de machines, exploiteren alles zelf en verzorgen bevoorrading, service en beheer.</p>
             <div class="hero-actions">
                 <a href="#leads" class="btn-primary">
                     Vraag een gratis locatiecheck aan
@@ -1110,10 +1157,10 @@
         <div class="about-grid">
             <div class="about-text">
                 <div class="section-label">Over Inicio Vending</div>
-                <h2 class="section-title">Premium outdoor vending, volledig verzorgd</h2>
-                <p>Inicio Vending ontwikkelt, plaatst en exploiteert premium outdoor vending machines op locaties met structurele doorloop in heel Nederland.</p>
-                <p>Wij investeren in de machine, installatie en exploitatie. U stelt een geschikte locatie beschikbaar en profiteert mee van de omzet. Van assortiment en bevoorrading tot realtime monitoring, onderhoud en klantenservice: wij verzorgen het volledige beheer.</p>
-                <p>Onze machine combineert een 22 inch touchscreen met een robuuste outdoor ombouw voor een representatieve uitstraling, weersbestendigheid en maximale uptime.</p>
+                <h2 class="section-title">Full service indoor en outdoor vending, volledig verzorgd</h2>
+                <p>Inicio Vending ontwikkelt, plaatst en exploiteert full service vendingconcepten op locaties met structurele doorloop in heel Nederland.</p>
+                <p>Wij investeren in de machines, installatie en volledige exploitatie. U stelt een geschikte locatie beschikbaar en profiteert mee van de omzet, terwijl wij bevoorrading, onderhoud, klantenservice en operationeel beheer verzorgen.</p>
+                <p>Of het nu gaat om een robuuste outdoor opstelling of een slimme indoor oplossing: wij exploiteren alles zelf en zorgen voor een representatieve, winstgevende vendingservice.</p>
             </div>
             <div class="about-features">
                 <div class="about-feature fade-up">
@@ -1138,6 +1185,28 @@
                 </div>
             </div>
         </div>
+        <div class="service-grid">
+            <div class="service-card fade-up">
+                <div class="service-tag">Outdoor</div>
+                <h3>Outdoor full service vending</h3>
+                <p>Voor buitenlocaties met doorloop, zichtbaarheid en behoefte aan 24/7 beschikbaarheid. Wij plaatsen, exploiteren en beheren de complete vendingoplossing.</p>
+                <div class="service-list">
+                    <span>Robuuste outdoor behuizing</span>
+                    <span>Geschikt voor laadpleinen, tankstations en parkeerlocaties</span>
+                    <span>Wij verzorgen exploitatie, bevoorrading en onderhoud</span>
+                </div>
+            </div>
+            <div class="service-card fade-up">
+                <div class="service-tag">Indoor</div>
+                <h3>Indoor full service vending</h3>
+                <p>Als aanvullende service bieden wij ook indoor vending voor kantoren, bedrijfsverzamelgebouwen, scholen en andere binnenlocaties. Ook hier exploiteren wij alles volledig zelf.</p>
+                <div class="service-list">
+                    <span>Geschikt voor kantoren, ontvangstruimtes en personeelslocaties</span>
+                    <span>Assortiment afgestemd op bezoekers en medewerkers</span>
+                    <span>Full service exploitatie zonder extra werk voor uw organisatie</span>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -1147,7 +1216,7 @@
         <div class="section-header">
             <div class="section-label">Waarom Inicio Vending</div>
             <h2 class="section-title">Samenwerken met Inicio betekent zorgeloos groeien</h2>
-            <p class="section-desc">Wij verzorgen de operatie van A tot Z, terwijl uw locatie profiteert van extra service en aanvullende omzet.</p>
+            <p class="section-desc">Wij leveren full service vending van A tot Z en exploiteren de complete oplossing zelf, terwijl uw locatie profiteert van extra service en aanvullende omzet.</p>
         </div>
         <div class="usp-grid">
             <div class="usp-card fade-up">
@@ -1190,12 +1259,12 @@
         <div class="product-layout">
             <div class="product-visual">
                 <div class="product-machine-svg"></div>
-                <span class="product-tag-outdoor">Outdoor geschikt</span>
+                <span class="product-tag-outdoor">Full service outdoor</span>
             </div>
             <div>
                 <div class="section-label">Onze Machine</div>
                 <h2 class="section-title">De Inicio vending machine</h2>
-                <p class="section-desc" style="margin-bottom:40px;">Een krachtige vending machine met premium 22 inch schermopbouw en een robuuste outdoor behuizing. Ontwikkeld voor betrouwbare prestaties op buitenlocaties.</p>
+                <p class="section-desc" style="margin-bottom:40px;">Een krachtige machine voor full service vending, met premium 22 inch schermopbouw en een robuuste outdoor behuizing. Ontwikkeld voor betrouwbare prestaties op buitenlocaties, met daarnaast ook indoor toepassingen als aanvullende service.</p>
                 <div class="product-specs">
                     <div class="product-spec fade-up">
                         <div class="product-spec-num">1</div>
@@ -1244,7 +1313,7 @@
         <div class="section-header">
             <div class="section-label">Doellocaties</div>
             <h2 class="section-title">Waar Inicio het meeste rendement oplevert</h2>
-            <p class="section-desc">Onze machines zijn ontwikkeld voor buitenlocaties met zichtbaarheid, doorloop en terugkerende bezoekers.</p>
+            <p class="section-desc">Onze full service vendingoplossingen zijn geschikt voor buitenlocaties met zichtbaarheid en doorloop, en aanvullend ook voor sterke indoor locaties met vaste bezoekersstromen.</p>
         </div>
         <div class="locaties-grid">
             <div class="locatie-card fade-up">
@@ -1364,7 +1433,7 @@
 <section class="cta-section">
     <div class="container">
         <h2>Vraag een gratis locatiecheck aan.<br>Geen investering, wel extra omzet.</h2>
-        <p>Ontdek vrijblijvend wat een Inicio vending machine voor uw locatie kan betekenen.</p>
+        <p>Ontdek vrijblijvend wat onze full service indoor of outdoor vendingoplossing voor uw locatie kan betekenen.</p>
         <a href="#leads" class="btn-primary" style="display:inline-flex; padding:14px 24px; font-size:14px;">
             Start de locatiecheck
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
@@ -1378,7 +1447,7 @@
         <div class="form-info">
             <div class="section-label">Locatiecheck aanvragen</div>
             <h2 class="section-title">Ontdek het potentieel van uw locatie</h2>
-            <p class="section-desc">Laat uw gegevens achter en wij nemen binnen 24 uur contact met u op voor een vrijblijvende locatiecheck.</p>
+            <p class="section-desc">Laat uw gegevens achter en wij nemen binnen 24 uur contact met u op voor een vrijblijvende locatiecheck voor indoor of outdoor full service vending.</p>
             <div class="form-trust">
                 <div class="form-trust-item">
                     <div class="form-trust-check">
