@@ -1024,7 +1024,7 @@
 
         /* WERKWIJZE */
         .werkwijze-timeline {
-            display: grid; grid-template-columns: repeat(5, 1fr); gap: 0;
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
             position: relative;
         }
         .werkwijze-timeline::before {
@@ -1033,7 +1033,7 @@
             height: 2px; background: var(--silver-light);
         }
         .werkwijze-step {
-            text-align: center; padding: 0 16px;
+            text-align: center; padding: 0 12px;
             position: relative;
         }
         .werkwijze-dot {
@@ -1057,6 +1057,24 @@
         }
         .werkwijze-step p {
             font-size: 13px; line-height: 1.6; color: var(--text-light);
+        }
+        .werkwijze-note {
+            margin-top: 34px;
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .werkwijze-note span {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 16px;
+            border-radius: 999px;
+            background: var(--white);
+            border: 1px solid rgba(186,192,200,0.24);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
         }
 
         /* FAQ */
@@ -1766,6 +1784,39 @@
                 <h4>Professionele presentatie</h4>
                 <p>Een verzorgde machine en een passend assortiment zorgen voor meer gemak op de locatie en een uitstraling die beter past dan een standaard automaat.</p>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- WERKWIJZE -->
+<section class="section section-cream" id="werkwijze">
+    <div class="container">
+        <div class="section-header centered">
+            <div class="section-label">Zo werkt het</div>
+            <h2 class="section-title">In 3 stappen van locatiecheck naar een volledig draaiende vendingoplossing</h2>
+            <p class="section-desc">Een heldere aanpak waarbij wij het concept beoordelen, uitwerken en vervolgens volledig exploiteren.</p>
+        </div>
+        <div class="werkwijze-timeline">
+            <div class="werkwijze-step fade-up">
+                <div class="werkwijze-dot">1</div>
+                <h4>Gratis locatiecheck</h4>
+                <p>Wij beoordelen uw locatie op doorloop, gebruiksmomenten, zichtbaarheid en praktische haalbaarheid.</p>
+            </div>
+            <div class="werkwijze-step fade-up">
+                <div class="werkwijze-dot">2</div>
+                <h4>Conceptvoorstel</h4>
+                <p>U ontvangt een voorstel voor indoor of outdoor vending, inclusief positionering en passend assortiment.</p>
+            </div>
+            <div class="werkwijze-step fade-up">
+                <div class="werkwijze-dot">3</div>
+                <h4>Plaatsing en exploitatie</h4>
+                <p>Na akkoord verzorgen wij plaatsing, bevoorrading, onderhoud en service onder volledige regie van Inicio.</p>
+            </div>
+        </div>
+        <div class="werkwijze-note">
+            <span>Geen investering nodig</span>
+            <span>Reactie binnen 24 uur</span>
+            <span>Plaatsing doorgaans binnen 3 maanden</span>
         </div>
     </div>
 </section>
