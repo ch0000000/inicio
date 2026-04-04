@@ -750,6 +750,70 @@
             color: var(--red);
         }
 
+        .brand-strip {
+            padding: 0 40px 72px;
+            background: linear-gradient(180deg, var(--cream), rgba(250,250,248,0.72));
+        }
+        .brand-strip-shell {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: linear-gradient(180deg, #ffffff, #f7f8fa);
+            border: 1px solid rgba(186,192,200,0.22);
+            border-radius: 28px;
+            padding: 26px 28px;
+            box-shadow: 0 18px 48px rgba(15,17,20,0.04);
+        }
+        .brand-strip-head {
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+        .brand-strip-title {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--red);
+        }
+        .brand-strip-copy {
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--text-secondary);
+            max-width: 520px;
+        }
+        .brand-strip-logos {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 12px;
+        }
+        .brand-pill {
+            min-height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 12px;
+            border-radius: 18px;
+            background: var(--white);
+            border: 1px solid rgba(186,192,200,0.22);
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--dark);
+            letter-spacing: -0.03em;
+        }
+        .brand-pill img {
+            max-width: 100%;
+            max-height: 30px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            filter: saturate(1.02);
+        }
+        .brand-pill.small { font-size: 16px; }
+        .brand-pill.red { color: var(--red); }
+
         /* SECTIONS COMMON */
         .section {
             padding: 88px 40px;
@@ -914,6 +978,23 @@
             color: var(--dark); margin-bottom: 12px;
             position: relative;
         }
+        .usp-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 14px;
+            margin-bottom: 18px;
+            background: linear-gradient(180deg, rgba(212,0,42,0.12), rgba(212,0,42,0.05));
+            color: var(--red);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+        .usp-icon svg {
+            width: 22px;
+            height: 22px;
+        }
         .usp-card p {
             font-size: 15px; line-height: 1.7;
             color: var(--text-secondary);
@@ -1050,6 +1131,21 @@
         .werkwijze-step:hover .werkwijze-dot {
             border-color: var(--red);
             box-shadow: 0 8px 32px rgba(212,0,42,0.12);
+        }
+        .werkwijze-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 18px;
+            border-radius: 14px;
+            background: rgba(212,0,42,0.08);
+            color: var(--red);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .werkwijze-icon svg {
+            width: 22px;
+            height: 22px;
         }
         .werkwijze-step h4 {
             font-size: 15px; font-weight: 700; color: var(--dark);
@@ -1324,6 +1420,48 @@
             border: 1px solid var(--silver-light);
             box-shadow: 0 20px 60px rgba(0,0,0,0.04);
         }
+        .form-next {
+            margin-top: 22px;
+            padding: 20px 22px;
+            border-radius: 18px;
+            background: linear-gradient(180deg, #fafbfc, #f3f5f8);
+            border: 1px solid rgba(186,192,200,0.24);
+        }
+        .form-next-title {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--red);
+            margin-bottom: 12px;
+        }
+        .form-next-steps {
+            display: grid;
+            gap: 10px;
+        }
+        .form-next-step {
+            display: grid;
+            grid-template-columns: 28px 1fr;
+            gap: 12px;
+            align-items: start;
+        }
+        .form-next-num {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(212,0,42,0.10);
+            color: var(--red);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 800;
+        }
+        .form-next-step p {
+            font-size: 14px;
+            line-height: 1.55;
+            color: var(--text-secondary);
+        }
         .form-row { margin-bottom: 20px; }
         .form-row-double { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
         .form-label {
@@ -1383,13 +1521,23 @@
         }
         .footer-inner {
             max-width: 1200px; margin: 0 auto;
-            display: flex; justify-content: space-between; align-items: center;
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            gap: 28px;
+            align-items: start;
         }
         .footer-logo {
             font-family: var(--font-body);
             font-size: 18px; font-weight: 700; color: var(--white);
         }
         .footer-logo span { color: var(--red); }
+        .footer-meta {
+            margin-top: 14px;
+            display: grid;
+            gap: 6px;
+            font-size: 12px;
+            color: var(--silver);
+        }
         .footer-links { display: flex; gap: 24px; }
         .footer-links a {
             font-size: 13px; color: var(--silver);
@@ -1397,6 +1545,18 @@
             transition: color 0.3s;
         }
         .footer-links a:hover { color: var(--white); }
+        .footer-company {
+            display: grid;
+            gap: 6px;
+            font-size: 12px;
+            color: var(--silver);
+            text-align: right;
+        }
+        .footer-company strong {
+            color: var(--white);
+            font-size: 13px;
+            font-weight: 700;
+        }
         .footer-copy {
             text-align: center; margin-top: 40px; padding-top: 24px;
             border-top: 1px solid rgba(255,255,255,0.06);
@@ -1495,6 +1655,10 @@
             .section-header { margin-bottom: 36px; }
             .hero-grid { grid-template-columns: 1fr; gap: 40px; }
             .hero-visual { display: none; }
+            .brand-strip { padding: 0 24px 56px; }
+            .brand-strip-head { display: block; }
+            .brand-strip-copy { margin-top: 8px; }
+            .brand-strip-logos { grid-template-columns: repeat(3, 1fr); }
             .home-signal-track { grid-template-columns: repeat(2, 1fr); }
             .home-editorial-shell { display: block; }
             .home-editorial-side { margin-top: 18px; }
@@ -1511,6 +1675,8 @@
             .form-layout { grid-template-columns: 1fr; gap: 48px; }
             .faq-grid { grid-template-columns: 1fr; }
             .stats-grid { grid-template-columns: repeat(3, 1fr); }
+            .footer-inner { grid-template-columns: 1fr; }
+            .footer-company { text-align: left; }
         }
         @media (max-width: 768px) {
             .section { padding: 56px 20px; }
@@ -1537,6 +1703,10 @@
             .hero-sub { font-size: 15px; }
             .hero-actions { flex-direction: column; }
             .btn-primary, .btn-secondary { justify-content: center; width: 100%; padding: 16px 24px; }
+            .brand-strip { padding: 0 20px 48px; }
+            .brand-strip-shell { padding: 22px 20px; border-radius: 22px; }
+            .brand-strip-logos { grid-template-columns: repeat(2, 1fr); }
+            .brand-pill { min-height: 56px; font-size: 16px; }
             .home-signal-strip { padding: 22px 20px 0; }
             .home-signal-track { grid-template-columns: 1fr; gap: 14px; }
             .home-editorial { padding: 28px 20px 64px; }
@@ -1579,13 +1749,15 @@
             .advisor-result { position: static; }
             .form-section { padding: 64px 20px; }
             .form-card { padding: 28px 20px; border-radius: 20px; }
+            .form-next { padding: 18px 18px; }
             .form-layout { gap: 40px; }
             .form-row-double { grid-template-columns: 1fr; }
             .contact-grid { grid-template-columns: 1fr; gap: 24px; }
             .contact-value { font-size: 16px; }
             .footer { padding: 40px 20px 32px; }
-            .footer-inner { flex-direction: column; gap: 24px; text-align: center; }
+            .footer-inner { grid-template-columns: 1fr; gap: 24px; text-align: center; }
             .footer-links { flex-wrap: wrap; justify-content: center; gap: 16px; }
+            .footer-company, .footer-meta { text-align: center; }
             .cookie-banner {
                 left: 16px;
                 right: 16px;
@@ -1673,6 +1845,23 @@
             <div class="hero-badge hero-badge-2">
                 <strong>24/7</strong> Beschikbaar
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="brand-strip" aria-label="Assortiment en A-merken">
+    <div class="brand-strip-shell fade-up">
+        <div class="brand-strip-head">
+            <div class="brand-strip-title">Bekende A-merken</div>
+            <p class="brand-strip-copy">Een vendingconcept staat of valt met herkenning. Daarom werken wij met populaire dranken, snacks en convenienceproducten die bezoekers direct kennen.</p>
+        </div>
+        <div class="brand-strip-logos">
+            <div class="brand-pill"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Coca-Cola_logo.svg" alt="Coca-Cola"></div>
+            <div class="brand-pill"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Red_Bull_logo.svg" alt="Red Bull"></div>
+            <div class="brand-pill"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mars_Logo.svg" alt="Mars"></div>
+            <div class="brand-pill"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Lays_logo_2019.svg" alt="Lay's"></div>
+            <div class="brand-pill"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Logo_Monster_Energy.webp" alt="Monster Energy"></div>
+            <div class="brand-pill"><img src="https://static.cdnlogo.com/logos/s/16/spa-water.svg" alt="SPA"></div>
         </div>
     </div>
 </section>
@@ -1766,21 +1955,33 @@
         <div class="usp-grid">
             <div class="usp-card fade-up">
                 <div class="usp-num">01</div>
+                <div class="usp-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-4-8 4-4 4 4"/></svg>
+                </div>
                 <h4>Geen investering nodig</h4>
                 <p>U plaatst een vendingoplossing zonder zelf te investeren in machine, installatie of exploitatie.</p>
             </div>
             <div class="usp-card fade-up">
                 <div class="usp-num">02</div>
+                <div class="usp-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+                </div>
                 <h4>Volledig beheerd</h4>
                 <p>Van plaatsing tot bevoorrading, onderhoud en klantenservice: wij regelen het volledig, zodat u er geen omkijken naar heeft.</p>
             </div>
             <div class="usp-card fade-up">
                 <div class="usp-num">03</div>
+                <div class="usp-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5 12 3l9 4.5M4.5 9.75V16.5L12 21l7.5-4.5V9.75M9 12l3 3 6-6"/></svg>
+                </div>
                 <h4>Passend concept per locatie</h4>
                 <p>Wij adviseren eerst welke route commercieel het sterkst past bij uw locatie, bezoekersstroom en gebruiksmomenten.</p>
             </div>
             <div class="usp-card fade-up">
                 <div class="usp-num">04</div>
+                <div class="usp-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5h15M6.75 16.5h10.5M9 13.5h6m-4.5-9h3a1.5 1.5 0 0 1 1.5 1.5v1.5h-6V6a1.5 1.5 0 0 1 1.5-1.5Z"/></svg>
+                </div>
                 <h4>Professionele presentatie</h4>
                 <p>Een verzorgde machine en een passend assortiment zorgen voor meer gemak op de locatie en een uitstraling die beter past dan een standaard automaat.</p>
             </div>
@@ -1799,16 +2000,25 @@
         <div class="werkwijze-timeline">
             <div class="werkwijze-step fade-up">
                 <div class="werkwijze-dot">1</div>
+                <div class="werkwijze-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-4.35-4.35m0 0A7.5 7.5 0 1 0 6.15 6.15a7.5 7.5 0 0 0 10.5 10.5Z"/></svg>
+                </div>
                 <h4>Gratis locatiecheck</h4>
                 <p>Wij beoordelen uw locatie op doorloop, gebruiksmomenten, zichtbaarheid en praktische haalbaarheid.</p>
             </div>
             <div class="werkwijze-step fade-up">
                 <div class="werkwijze-dot">2</div>
+                <div class="werkwijze-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5h15m-15-10.5h15m-15 5.25h9"/></svg>
+                </div>
                 <h4>Conceptvoorstel</h4>
                 <p>U ontvangt een voorstel voor indoor of outdoor vending, inclusief positionering en passend assortiment.</p>
             </div>
             <div class="werkwijze-step fade-up">
                 <div class="werkwijze-dot">3</div>
+                <div class="werkwijze-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-8.25-8.25L20.25 12l-8.25 8.25"/></svg>
+                </div>
                 <h4>Plaatsing en exploitatie</h4>
                 <p>Na akkoord verzorgen wij plaatsing, bevoorrading, onderhoud en service onder volledige regie van Inicio.</p>
             </div>
@@ -1896,6 +2106,23 @@
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
                     </div>
                     24/7 service en monitoring
+                </div>
+            </div>
+            <div class="form-next">
+                <div class="form-next-title">Na uw aanvraag</div>
+                <div class="form-next-steps">
+                    <div class="form-next-step">
+                        <div class="form-next-num">1</div>
+                        <p>We nemen meestal binnen 24 uur contact met u op om de locatie kort door te spreken.</p>
+                    </div>
+                    <div class="form-next-step">
+                        <div class="form-next-num">2</div>
+                        <p>U ontvangt een eerste inschatting of indoor of outdoor vending het best past.</p>
+                    </div>
+                    <div class="form-next-step">
+                        <div class="form-next-num">3</div>
+                        <p>Bij een goede match werken wij een concreet voorstel uit voor plaatsing en exploitatie.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2039,13 +2266,25 @@
 <!-- FOOTER -->
 <footer class="footer">
     <div class="footer-inner">
-        <div class="footer-logo">inicio<span>.</span></div>
+        <div>
+            <div class="footer-logo">inicio<span>.</span></div>
+            <div class="footer-meta">
+                <span>Vestigingsplaats: nog toevoegen</span>
+                <span>KVK: nog toevoegen</span>
+                <span>BTW: nog toevoegen</span>
+            </div>
+        </div>
         <div class="footer-links">
             <a href="index.html">Home</a>
             <a href="outdoor.html">Outdoor vending</a>
             <a href="indoor.html">Indoor vending</a>
             <a href="#leads">Locatiecheck</a>
             <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-company">
+            <strong>Zakelijke gegevens</strong>
+            <span>LinkedIn: nog toevoegen</span>
+            <span>Adres: nog toevoegen</span>
         </div>
     </div>
     <div class="footer-copy">&copy; 2026 Inicio Vending. Alle rechten voorbehouden.</div>
