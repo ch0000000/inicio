@@ -512,11 +512,15 @@
         }
         .home-side-stat {
             display: grid;
-            gap: 8px;
+            gap: 0;
         }
         .home-side-stat-row {
-            padding: 10px 0;
+            padding: 14px 0;
             border-bottom: 1px solid rgba(186,192,200,0.22);
+            display: grid;
+            grid-template-columns: 112px 1fr;
+            align-items: start;
+            gap: 10px;
         }
         .home-side-stat-row:last-child {
             border-bottom: 0;
@@ -524,19 +528,17 @@
         }
         .home-side-stat-value {
             display: block;
-            font-size: 22px;
+            font-size: 20px;
             line-height: 1;
             font-weight: 800;
             color: var(--dark);
-            margin-bottom: 4px;
-        }
-        .home-side-stat-value span {
-            color: var(--red);
+            margin-bottom: 0;
         }
         .home-side-stat-row p {
             font-size: 13px;
-            line-height: 1.6;
+            line-height: 1.55;
             color: var(--text-secondary);
+            margin: 0;
         }
         .home-problem-card,
         .home-proof-card {
@@ -1626,14 +1628,14 @@
     <div class="hero-grid">
         <div>
             <div class="hero-tag">&#9679; Full service vending</div>
-            <h1>Premium vending voor locaties die <em>service, uitstraling en extra omzet</em> willen combineren.</h1>
-            <p class="hero-sub">Inicio ontwikkelt premium vendingconcepten voor binnen- en buitenlocaties en verzorgt de volledige uitrol en exploitatie voor partners die gemak en kwaliteit belangrijk vinden.</p>
+            <h1>Zet uw locatie aan het werk met <em>vending zonder investering of extra beheer</em>.</h1>
+            <p class="hero-sub">Inicio plaatst en exploiteert vendingconcepten voor binnen- en buitenlocaties. U creëert extra service en extra omzet op uw locatie, terwijl wij plaatsing, bevoorrading en beheer volledig verzorgen.</p>
             <div class="hero-actions">
-                <a href="#concept-keuze" class="btn-primary">
-                    Bekijk de twee concepten
+                <a href="#leads" class="btn-primary">
+                    Vraag een gratis locatiecheck aan
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
-                <a href="#leads" class="btn-secondary">Vraag een locatiecheck aan</a>
+                <a href="#concept-keuze" class="btn-secondary">Bekijk indoor en outdoor</a>
             </div>
         </div>
         <div class="hero-visual">
@@ -1661,34 +1663,34 @@
     <div class="home-editorial-shell">
         <div class="home-editorial-main fade-up">
             <div class="section-label">Inicio Vending</div>
-            <h2 class="section-title">Een premium vendingpartner voor locaties die gemak, uitstraling en rendement willen combineren</h2>
+            <h2 class="section-title">Meer gemak voor bezoekers, extra omzet voor uw locatie en geen operationeel gedoe voor uw team</h2>
             <div class="home-editorial-copy">
-                <p>Inicio creëert vendingoplossingen die passen bij de uitstraling, bezoekersstroom en gebruiksmomenten van een locatie. Van concept tot dagelijkse operatie zorgen wij dat het geheel klopt.</p>
+                <p>Niet elke locatie vraagt om hetzelfde vendingconcept. Daarom kijken wij eerst naar doorloop, gebruiksmomenten en omgeving, en adviseren daarna de oplossing die commercieel het sterkst past.</p>
             </div>
             <ul class="home-editorial-points">
-                <li>Concepten voor zowel binnen- als buitenlocaties.</li>
-                <li>Ontwikkeld voor gemak, service en extra rendement.</li>
-                <li>Operationeel volledig verzorgd door Inicio.</li>
+                <li>U start zonder investering in machine, plaatsing of voorraad.</li>
+                <li>Bezoekers krijgen directe toegang tot snacks, dranken en convenienceproducten.</li>
+                <li>Beheer, bevoorrading en service liggen volledig bij Inicio.</li>
             </ul>
         </div>
         <div class="home-editorial-side fade-up">
             <div class="home-side-card">
                 <div class="section-label">Full service</div>
-                <h3>Premium in uitstraling en uitvoering</h3>
-                <p>Een verzorgd concept dat commercieel en operationeel klopt.</p>
+                <h3>Een verzorgd concept dat geld oplevert zonder extra werk</h3>
+                <p>Wij combineren presentatie, assortiment en exploitatie in een vendingoplossing die past bij uw locatie.</p>
             </div>
             <div class="home-side-card home-side-stat">
                 <div class="home-side-stat-row">
                     <span class="home-side-stat-value">Premium</span>
-                    <p>Afgestemd op locatie en doelgroep.</p>
+                    <p>Verzorgde machine, nette presentatie en passend assortiment.</p>
                 </div>
                 <div class="home-side-stat-row">
                     <span class="home-side-stat-value">24/7</span>
-                    <p>Beschikbaar waar het concept daarom vraagt.</p>
+                    <p>Verkoopmomenten, ook buiten reguliere openingstijden.</p>
                 </div>
                 <div class="home-side-stat-row">
                     <span class="home-side-stat-value">Full service</span>
-                    <p>Beheer en exploitatie onder regie van Inicio.</p>
+                    <p>Plaatsing, bevoorrading, onderhoud en service door ons team.</p>
                 </div>
             </div>
         </div>
@@ -1700,20 +1702,20 @@
         <div class="home-choice-header">
             <div>
                 <div class="section-label">Onze concepten</div>
-                <h2 class="section-title">Indoor en outdoor vending, elk met een eigen commerciële kracht</h2>
+                <h2 class="section-title">Twee routes, afhankelijk van waar en wanneer uw bezoekers kopen</h2>
             </div>
-            <p class="section-desc">Twee verschillende oplossingen, afgestemd op locatie, bezoekersstroom en gebruiksmoment.</p>
+            <p class="section-desc">Indoor en outdoor vending vragen om een andere aanpak. Dit is het verschil in gebruiksmoment, locatie en opbrengstkans.</p>
         </div>
         <div class="home-choice-grid">
             <article class="home-choice-card outdoor-card fade-up">
                 <div>
                     <div class="service-tag">Outdoor</div>
                     <h3>Outdoor full service vending</h3>
-                    <p>Voor buitenlocaties waar zichtbaarheid, toegankelijkheid en verkoop buiten reguliere openingstijden belangrijk zijn.</p>
+                    <p>Voor locaties waar zichtbaarheid, doorloop en verkoop buiten openingstijden het meeste rendement opleveren.</p>
                     <ul class="home-choice-points">
                         <li>Geschikt voor laadpleinen, tankstations en andere buitenlocaties</li>
-                        <li>Interessant bij wachttijd, doorloop en impulsaankopen</li>
-                        <li>Robuuste opstelling met exploitatie volledig door Inicio</li>
+                        <li>Sterk bij wachttijd, doorloop en impulsaankopen</li>
+                        <li>Geschikt voor dranken, snacks en convenienceproducten</li>
                     </ul>
                 </div>
                 <a href="outdoor.html" class="home-choice-link">Bekijk het outdoor concept</a>
@@ -1722,11 +1724,11 @@
                 <div>
                     <div class="service-tag">Indoor</div>
                     <h3>Indoor full service vending</h3>
-                    <p>Voor binnenlocaties waar comfort, dagelijks gebruiksgemak en een verzorgde uitstraling samenkomen.</p>
+                    <p>Voor locaties waar medewerkers en bezoekers dagelijks gemak verwachten en een verzorgde vendingoplossing waarderen.</p>
                     <ul class="home-choice-points">
                         <li>Passend bij kantoren, onderwijs, hospitality en gebouwlocaties</li>
                         <li>Assortiment afgestemd op doelgroep en gebruiksmoment</li>
-                        <li>Full service exploitatie zonder extra werk voor uw team</li>
+                        <li>Meer service op de locatie zonder extra werk voor uw team</li>
                     </ul>
                 </div>
                 <a href="indoor.html" class="home-choice-link">Bekijk het indoor concept</a>
@@ -1747,22 +1749,22 @@
             <div class="usp-card fade-up">
                 <div class="usp-num">01</div>
                 <h4>Geen investering nodig</h4>
-                <p>Wij investeren in machine, installatie en exploitatie. Uw organisatie hoeft niet zelf te investeren.</p>
+                <p>U plaatst een vendingoplossing zonder zelf te investeren in machine, installatie of exploitatie.</p>
             </div>
             <div class="usp-card fade-up">
                 <div class="usp-num">02</div>
                 <h4>Volledig beheerd</h4>
-                <p>Van plaatsing tot bevoorrading, onderhoud en klantenservice: de operationele uitvoering ligt volledig bij ons.</p>
+                <p>Van plaatsing tot bevoorrading, onderhoud en klantenservice: u heeft er in de praktijk nauwelijks omkijken naar.</p>
             </div>
             <div class="usp-card fade-up">
                 <div class="usp-num">03</div>
                 <h4>Passend concept per locatie</h4>
-                <p>Wij adviseren eerst of indoor of outdoor vending commercieel het sterkste past bij uw situatie.</p>
+                <p>Wij adviseren eerst welke route commercieel het sterkst past bij uw locatie, bezoekersstroom en gebruiksmomenten.</p>
             </div>
             <div class="usp-card fade-up">
                 <div class="usp-num">04</div>
                 <h4>Premium uitstraling</h4>
-                <p>Een verzorgde vendingoplossing die aansluit op de uitstraling van uw locatie en het gemak voor bezoekers verhoogt.</p>
+                <p>Een verzorgde machine en een passend assortiment zorgen voor meer gemak op de locatie en een professionelere uitstraling.</p>
             </div>
         </div>
     </div>
