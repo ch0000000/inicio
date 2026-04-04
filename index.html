@@ -499,10 +499,12 @@
         .service-list {
             display: grid;
             gap: 10px;
+            padding-left: 20px;
         }
-        .service-list span {
+        .service-list li {
             font-size: 14px;
             color: var(--text-primary);
+            line-height: 1.6;
         }
 
         /* USPs */
@@ -872,10 +874,12 @@
             display: grid;
             gap: 10px;
             margin: 22px 0 28px;
+            padding-left: 20px;
         }
-        .advisor-points span {
+        .advisor-points li {
             color: rgba(255,255,255,0.88);
             font-size: 14px;
+            line-height: 1.6;
         }
         .advisor-actions {
             display: flex;
@@ -1333,21 +1337,21 @@
                 <div class="service-tag">Outdoor</div>
                 <h3>Outdoor full service vending</h3>
                 <p>Voor buitenlocaties met doorloop, zichtbaarheid en behoefte aan 24/7 beschikbaarheid. Wij plaatsen, exploiteren en beheren de complete vendingoplossing.</p>
-                <div class="service-list">
-                    <span>Robuuste outdoor behuizing</span>
-                    <span>Geschikt voor laadpleinen, tankstations en parkeerlocaties</span>
-                    <span>Wij verzorgen exploitatie, bevoorrading en onderhoud</span>
-                </div>
+                <ul class="service-list">
+                    <li>Robuuste outdoor behuizing</li>
+                    <li>Geschikt voor laadpleinen, tankstations en parkeerlocaties</li>
+                    <li>Wij verzorgen exploitatie, bevoorrading en onderhoud</li>
+                </ul>
             </div>
             <div class="service-card fade-up">
                 <div class="service-tag">Indoor</div>
                 <h3>Indoor full service vending</h3>
                 <p>Als aanvullende service bieden wij ook indoor vending voor kantoren, bedrijfsverzamelgebouwen, scholen en andere binnenlocaties. Ook hier exploiteren wij alles volledig zelf.</p>
-                <div class="service-list">
-                    <span>Geschikt voor kantoren, ontvangstruimtes en personeelslocaties</span>
-                    <span>Assortiment afgestemd op bezoekers en medewerkers</span>
-                    <span>Full service exploitatie zonder extra werk voor uw organisatie</span>
-                </div>
+                <ul class="service-list">
+                    <li>Geschikt voor kantoren, ontvangstruimtes en personeelslocaties</li>
+                    <li>Assortiment afgestemd op bezoekers en medewerkers</li>
+                    <li>Full service exploitatie zonder extra werk voor uw organisatie</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -1620,11 +1624,11 @@
             <h3>Onze eerste inschatting</h3>
             <div class="advisor-recommendation" id="advisorRecommendation">Indoor full service vending</div>
             <p id="advisorDescription">Deze oplossing past vaak het best bij locaties waar bezoekers of medewerkers zich binnen bevinden en aankopen vooral plaatsvinden tijdens vaste openingstijden of werkuren.</p>
-            <div class="advisor-points" id="advisorPoints">
-                <span>Wij plaatsen, exploiteren en beheren de machine volledig zelf</span>
-                <span>Assortiment afgestemd op medewerkers, bezoekers en gebruiksmomenten</span>
-                <span>Geschikt voor kantoren, onderwijs en bedrijfsomgevingen</span>
-            </div>
+            <ul class="advisor-points" id="advisorPoints">
+                <li>Wij plaatsen, exploiteren en beheren de machine volledig zelf</li>
+                <li>Assortiment afgestemd op medewerkers, bezoekers en gebruiksmomenten</li>
+                <li>Geschikt voor kantoren, onderwijs en bedrijfsomgevingen</li>
+            </ul>
             <div class="advisor-actions">
                 <a href="#leads" class="btn-primary">Vraag advies aan</a>
                 <a href="#contact" class="btn-secondary">Bespreek uw locatie</a>
@@ -1966,7 +1970,7 @@ function updateAdvisor() {
     const content = advisorContent[recommendation];
     advisorRecommendation.textContent = content.title;
     advisorDescription.textContent = content.description;
-    advisorPoints.innerHTML = content.points.map((point) => `<span>${point}</span>`).join('');
+    advisorPoints.innerHTML = content.points.map((point) => `<li>${point}</li>`).join('');
 }
 
 advisorInputs.forEach((input) => {
