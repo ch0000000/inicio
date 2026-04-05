@@ -1338,19 +1338,6 @@
                 </div>
             </div>
         </div>
-        <div class="service-grid">
-            <div class="service-card fade-up">
-                <div class="service-tag">Indoor</div>
-                <h3>Indoor full service vending</h3>
-                <p>Voor binnenlocaties waar gemak, gebruiksvriendelijkheid en dagelijkse relevantie centraal staan. Wij plaatsen en exploiteren de complete vendingoplossing zelf.</p>
-                <ul class="service-list">
-                    <li>Geschikt voor kantoren, scholen en bedrijfsgebouwen</li>
-                    <li>Assortiment afgestemd op medewerkers, bezoekers en pauzemomenten</li>
-                    <li>Wij verzorgen exploitatie, bevoorrading en onderhoud</li>
-                </ul>
-                <a href="#leads" class="btn-primary">Vraag indoor locatiecheck aan</a>
-            </div>
-        </div>
     </div>
 </section>
 
@@ -1582,56 +1569,6 @@
             Start de indoor locatiecheck
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
         </a>
-    </div>
-</section>
-
-<!-- VENDING ADVISOR -->
-<section class="advisor-section" id="keuzehulp">
-    <div class="advisor-layout">
-        <div class="advisor-card">
-            <div class="section-label">Keuzehulp</div>
-            <h3>Past indoor vending bij uw locatie?</h3>
-            <p class="advisor-intro">Beantwoord een paar korte vragen en ontvang direct een indicatie of indoor of outdoor full service vending beter aansluit op uw situatie. Voor binnenlocaties ligt de nadruk vaak op gemak, herhaalbezoek en vaste gebruiksmomenten.</p>
-            <div class="advisor-questions">
-                <div class="advisor-question">
-                    <h4>1. Staat de machine binnen of buiten?</h4>
-                    <div class="advisor-options">
-                        <label><input type="radio" name="machine_location" value="indoor" checked><span>Binnen</span></label>
-                        <label><input type="radio" name="machine_location" value="outdoor"><span>Buiten</span></label>
-                    </div>
-                </div>
-                <div class="advisor-question">
-                    <h4>2. Wanneer wilt u vooral verkopen realiseren?</h4>
-                    <div class="advisor-options">
-                        <label><input type="radio" name="traffic_pattern" value="indoor" checked><span>Tijdens kantoor- of openingstijden</span></label>
-                        <label><input type="radio" name="traffic_pattern" value="outdoor"><span>Ook buiten reguliere openingstijden</span></label>
-                    </div>
-                </div>
-                <div class="advisor-question">
-                    <h4>3. Wat typeert uw locatie het meest?</h4>
-                    <div class="advisor-options">
-                        <label><input type="radio" name="location_type" value="indoor" checked><span>Kantoor, school of bedrijfsgebouw</span></label>
-                        <label><input type="radio" name="location_type" value="outdoor"><span>Tankstation, laadplein of buitenlocatie</span></label>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="advisor-result" id="advisorResult">
-            <div class="advisor-badge">Advies op basis van uw antwoorden</div>
-            <h3>Onze eerste inschatting</h3>
-            <div class="advisor-recommendation" id="advisorRecommendation">Indoor full service vending</div>
-            <p id="advisorDescription">Deze oplossing past vaak het best bij locaties waar bezoekers of medewerkers zich binnen bevinden en aankopen vooral plaatsvinden tijdens vaste openingstijden of werkuren.</p>
-            <ul class="advisor-points" id="advisorPoints">
-                <li>Wij plaatsen, exploiteren en beheren de machine volledig zelf</li>
-                <li>Assortiment afgestemd op medewerkers, bezoekers en gebruiksmomenten</li>
-                <li>Geschikt voor kantoren, onderwijs en bedrijfsomgevingen</li>
-            </ul>
-            <div class="advisor-actions">
-                <a href="#leads" class="btn-primary">Vraag indoor advies aan</a>
-                <a href="outdoor.html" class="btn-secondary">Toch outdoor bekijken</a>
-            </div>
-            <p class="advisor-note">Dit is een eerste indicatie. Tijdens de locatiecheck adviseren wij definitief welke full service vendingoplossing het meeste rendement oplevert.</p>
-        </div>
     </div>
 </section>
 
@@ -1926,55 +1863,6 @@ cookieDecline.addEventListener('click', () => {
     hideCookieBanner();
 });
 
-// Vending advisor
-const advisorRecommendation = document.getElementById('advisorRecommendation');
-const advisorDescription = document.getElementById('advisorDescription');
-const advisorPoints = document.getElementById('advisorPoints');
-const advisorInputs = document.querySelectorAll('input[name="machine_location"], input[name="traffic_pattern"], input[name="location_type"]');
-
-const advisorContent = {
-    indoor: {
-        title: 'Indoor full service vending',
-        description: 'Deze oplossing past vaak het best bij locaties waar bezoekers of medewerkers zich binnen bevinden en aankopen vooral plaatsvinden tijdens vaste openingstijden of werkuren.',
-        points: [
-            'Wij plaatsen, exploiteren en beheren de machine volledig zelf',
-            'Assortiment afgestemd op medewerkers, bezoekers en gebruiksmomenten',
-            'Geschikt voor kantoren, onderwijs en bedrijfsomgevingen'
-        ]
-    },
-    outdoor: {
-        title: 'Outdoor full service vending',
-        description: 'Deze oplossing past vaak het best bij locaties waar zichtbaarheid, buitenstroom en verkoop buiten reguliere openingstijden een grote rol spelen.',
-        points: [
-            'Wij verzorgen de complete exploitatie, bevoorrading en service',
-            'Robuuste opstelling voor buitenlocaties met doorloop en bereikbaarheid',
-            'Geschikt voor laadpleinen, tankstations, parkeerlocaties en andere buitenplekken'
-        ]
-    }
-};
-
-function updateAdvisor() {
-    let indoorScore = 0;
-    let outdoorScore = 0;
-
-    advisorInputs.forEach((input) => {
-        if (!input.checked) return;
-        if (input.value === 'indoor') indoorScore += 1;
-        if (input.value === 'outdoor') outdoorScore += 1;
-    });
-
-    const recommendation = outdoorScore > indoorScore ? 'outdoor' : 'indoor';
-    const content = advisorContent[recommendation];
-    advisorRecommendation.textContent = content.title;
-    advisorDescription.textContent = content.description;
-    advisorPoints.innerHTML = content.points.map((point) => `<li>${point}</li>`).join('');
-}
-
-advisorInputs.forEach((input) => {
-    input.addEventListener('change', updateAdvisor);
-});
-
-updateAdvisor();
 </script>
 
 </body>
