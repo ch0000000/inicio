@@ -463,9 +463,10 @@
 
         .service-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr;
             gap: 24px;
             margin-top: 40px;
+            max-width: 760px;
         }
         .service-card {
             background: var(--white);
@@ -507,6 +508,10 @@
             font-size: 14px;
             color: var(--text-primary);
             line-height: 1.6;
+        }
+        .service-card .btn-primary {
+            margin-top: 24px;
+            align-self: flex-start;
         }
 
         /* USPs */
@@ -1344,17 +1349,6 @@
                     <li>Wij verzorgen exploitatie, bevoorrading en onderhoud</li>
                 </ul>
                 <a href="#leads" class="btn-primary">Vraag outdoor locatiecheck aan</a>
-            </div>
-            <div class="service-card fade-up">
-                <div class="service-tag">Ook mogelijk</div>
-                <h3>Toch een binnenlocatie?</h3>
-                <p>Heeft uw locatie vooral vaste bezoekersstromen binnen een gebouw? Dan is indoor vending waarschijnlijk de betere route.</p>
-                <ul class="service-list">
-                    <li>Interessant voor kantoren, scholen en bedrijfsgebouwen</li>
-                    <li>Assortiment afgestemd op pauzes en dagelijkse gebruiksmomenten</li>
-                    <li>Ook daar verzorgen wij de volledige exploitatie zelf</li>
-                </ul>
-                <a href="indoor.html" class="btn-primary">Bekijk indoor pagina</a>
             </div>
         </div>
     </div>
